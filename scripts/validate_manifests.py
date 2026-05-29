@@ -14,6 +14,7 @@ CHECKSUMS = ROOT / 'provenance' / 'checksums' / 'checksums.sha256'
 HEAVY_EXTS = {'.pth', '.pt', '.ckpt', '.model', '.pb'}
 JUNK_NAMES = {'.DS_Store'}
 JUNK_PARTS = {'__pycache__', '.ipynb_checkpoints', '.git'}
+LOCAL_ONLY_PARTS = {'local_edit_logs'}
 HEAVY_PARTS = {'checkpoints', 'build'}
 
 def sha256_file(path):
@@ -42,6 +43,8 @@ def main():
         rel = file.relative_to(ROOT).as_posix()
         parts = set(file.relative_to(ROOT).parts)
         if '.git' in parts:
+            continue
+        if parts & LOCAL_ONLY_PARTS:
             continue
         if rel in {
             'provenance/source_manifests/included_manifest.csv',

@@ -1,15 +1,15 @@
-# Protocols Eval Addendum 20260510
+# Дополнение к протоколам оценки 20260510
 
-This is a small supplement to `final_training_bundle_20260510.zip`.
+Это небольшое дополнение к архиву `final_training_bundle_20260510.zip`.
 
-It adds completed MACE alloy protocol ablations from the normal partition:
+Оно добавляет завершенные абляционные запуски протокола MACE для alloy из разбиения normal:
 - `stage2_normal`
 - `lora_ew10_normal`
 - `freeze1_ew10_normal`
 
-This archive should not replace the main bundle. It only adds protocol-ablation evidence for the presentation builder.
+Этот архив не должен заменять основной комплект материалов. Он только добавляет подтверждающие материалы по абляциям протокола для сборки презентации.
 
-The archive intentionally excludes checkpoints, model files, raw datasets, image artifacts, Python cache files, and other heavy files. Do not use checkpoints or models from this addendum; only use the included JSON/CSV metrics, logs, scripts, and summaries.
+Архив намеренно не включает чекпоинты, файлы моделей, исходные датасеты, графические артефакты, файлы кэша Python и другие тяжелые файлы. Не используйте чекпоинты или модели из этого дополнения; используйте только включенные метрики в JSON/CSV, логи, скрипты и сводки.
 
-Recommended use:
-Keep `MACE-EW50` as the main MACE alloy row unless the report framing is changed explicitly. Use these protocol runs as backup ablations for the loss-weighting discussion.
+Рекомендуемое использование:
+Оставлять `MACE-EW50` основной строкой MACE для alloy, если рамка отчета явно не изменена. Эти запуски протокола можно использовать как резервные абляционные материалы для обсуждения весов функции потерь.
