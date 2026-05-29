@@ -1,7 +1,7 @@
 # Ограничения
 
-- Full retraining from raw data is out of scope for this repo.
-- Raw datasets and model weights are excluded physically.
-- Some old contexts are preserved only as archive/provenance and must not override verified metrics.
-- MTP ensemble rows are sanity checks for organic 300K, not main result rows.
-- FLiNaK is outside the main result line.
+- Из этого репозитория нельзя полностью переобучить модели с исходных данных.
+- Исходные датасеты, веса моделей и checkpoints не включены физически; их роль и расположение описаны через manifests.
+- Старые контексты сохранены только как архивные материалы и не могут переопределять verified metrics.
+- MTP ensemble используется только как sanity check для organic 300K и не является основной строкой результатов.
+- FLiNaK находится вне основной линии экспериментов.
