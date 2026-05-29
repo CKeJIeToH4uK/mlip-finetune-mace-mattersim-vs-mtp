@@ -1,9 +1,11 @@
 # Provenance
 
-Source chains are kept in three layers:
+В этом разделе описано, как в репозитории связаны итоговые таблицы, промежуточные материалы проверки и исходные рабочие сводки.
 
-1. verified CSV tables in `results/verified_metrics/`;
-2. raw eval snapshots and small metrics JSON/CSV in `provenance/raw_eval_refs/`;
-3. summaries, log snippets, slurm scripts and manifests under `provenance/`.
+Основные уровни:
 
-Old contexts and presentation handoffs may explain history, but they are not numeric authority. Heavy assets are represented by manifest rows rather than physical copies.
+1. verified CSV-таблицы в `results/verified_metrics/`;
+2. небольшие файлы оценки и metrics JSON/CSV в `provenance/raw_eval_refs/`;
+3. summaries, log snippets, slurm scripts и manifests в `provenance/`.
+
+Старые контексты и presentation handoffs используются только для восстановления истории работы. Они не являются источником финальных чисел.
