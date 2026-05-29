@@ -64,3 +64,24 @@
 - Выполнена сборка `main.tex` через LaTeX-плагин командой `latexmk -xelatex` во временный каталог `/tmp/final_report_work_latex_build`.
 - Сборка завершилась с кодом `0`; PDF был создан во временном каталоге.
 - Build-артефакты в `text_coursework/final_report_work/` не добавлялись.
+
+## Review-fix pass 2026-05-29
+
+- Добавлен `notes/CITATION_AND_ANTI_PLAGIARISM_RULES.md`.
+- В `main.tex` тема титульного листа заменена на утвержденную формулировку.
+- Поля изменены на `left=25mm,right=10mm,top=20mm,bottom=20mm`.
+- Основной шрифт заменен на `Times New Roman`; моноширинный шрифт установлен как `Courier New`.
+- `\nocite{*}` убран из активного LaTeX-кода и заменен комментарием о явном цитировании источников.
+- В `notes/TODO.md` добавлен финальный citation-check.
+- После правок выполнена свежая сборка `main.tex` через LaTeX-плагин командой `latexmk -xelatex` во временный каталог `/tmp/final_report_work_latex_build`.
+- Сборка завершилась с кодом `0`; PDF был создан во временном каталоге.
+- В логе сборки есть ожидаемое предупреждение `Empty thebibliography`, потому что `\nocite{*}` убран, а явные `\cite{...}` еще не добавлены в placeholder-текст.
+- Commit в рамках этого review-fix pass не выполнялся.
+
+## Повторная проверка по запросу 2026-05-29
+
+- Повторно выполнена сборка `main.tex` через LaTeX-плагин командой `latexmk -xelatex` во временный каталог `/tmp/final_report_work_latex_build`.
+- Сборка завершилась с кодом `0`; PDF создан во временном каталоге.
+- Предупреждение `Empty thebibliography` остается ожидаемым до добавления явных `\cite{...}` в текст.
+- Build-артефакты в `text_coursework/final_report_work/` не добавлялись.
+- Commit не выполнялся.
