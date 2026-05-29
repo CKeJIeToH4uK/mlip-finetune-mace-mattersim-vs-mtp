@@ -1,24 +1,24 @@
 # Curated Coursework Repository
 
-This repo is curated for report/review/provenance. It is a maximal curated clean repo: it keeps final verified metrics, selected supporting tables, provenance snapshots, curated helper scripts, figures, presentation artifacts, and archive context needed to review the coursework.
+Этот репозиторий содержит очищенную и структурированную версию материалов курсового проекта. В него включены финальные проверенные метрики, вспомогательные таблицы, provenance snapshots, отобранные скрипты анализа, графики, презентационные материалы и архивный контекст, необходимый для проверки проведенных экспериментов.
 
-It does not include raw datasets, model weights, checkpoints, full retraining assets, heavy archives, local binaries, nested repositories, or build outputs. Excluded heavy and external artifacts are documented in `provenance/source_manifests/`.
+Крупные исходные данные, веса моделей, checkpoints, тяжелые архивы, локальные бинарные файлы, вложенные репозитории и build outputs не включены физически. Их расположение и роль описаны в `provenance/source_manifests/`.
 
-Final numeric authority for the report is `external build-context `text_coursework/RESULTS_SOURCE_OF_TRUTH.md`` plus the system-specific verified CSV files in `results/verified_metrics/`: organic-датасет, H2O, and MoNbTaVW. Handoff tables under `provenance/handoff_tables/` are provenance/support material, not complete final source-of-truth.
+Основным источником финальных численных результатов для отчета является внешний рабочий документ `text_coursework/RESULTS_SOURCE_OF_TRUTH.md`. Внутри этого репозитория ему соответствуют system-specific verified CSV-файлы в `results/verified_metrics/`: organic-датасет, H2O и MoNbTaVW. Таблицы из `provenance/handoff_tables/` используются только как вспомогательный provenance/support material и не являются полным source-of-truth.
 
-Core systems and models represented here: organic-датасет, H2O, MoNbTaVW; MTP, MACE, MatterSim, and MoNbTaVW energy-weighted MACE protocol rows.
+Основные системы и модели: organic-датасет, H2O, MoNbTaVW; MTP, MACE, MatterSim и energy-weighted MACE protocol rows для MoNbTaVW.
 
-See also: `PROJECT_STRUCTURE.md` for layout and `REPRODUCIBILITY.md` for what can and cannot be reproduced from this clean repo.
+См. также `PROJECT_STRUCTURE.md` для навигации по репозиторию и `REPRODUCIBILITY.md` для описания того, что можно проверить локально, а какие активы намеренно исключены.
 
 ## Quick Map
 
-- `docs/`: curated Russian documentation for report writing and review.
-- `results/`: system-specific verified metrics, supporting tables, figures, and sanity checks.
-- `provenance/`: source chains, handoff tables, source mirror, log snippets, slurm scripts, manifests, and checksums.
-- `src/mlip_benchmark/`: lightweight curated helper modules only.
-- `scripts/`: validation and convenience scripts for this clean repo.
-- `presentation_archive/`: final deck and selected presentation support material.
-- `archive/`: old contexts and excluded branches kept away from final numeric authority.
+- `docs/` — краткие методологические описания: постановка задачи, данные, протокол экспериментов, модели, метрики, результаты, provenance и ограничения.
+- `results/` — проверенные таблицы метрик, вспомогательные таблицы, sanity checks и отобранные графики.
+- `provenance/` — материалы происхождения результатов: handoff tables, source mirror, log snippets, slurm scripts, manifests, checksums и raw eval refs.
+- `src/mlip_benchmark/` — легкие curated helper modules для анализа, проверки результатов и построения таблиц/графиков.
+- `scripts/` — validation scripts и вспомогательные команды для работы с clean repo.
+- `presentation_archive/` — финальная презентация и выбранные preview/backup материалы.
+- `archive/` — старые контексты и исключенные ветки, не являющиеся источником финальных чисел.
 
 ## Validation
 
@@ -29,4 +29,4 @@ python scripts/validate_manifests.py
 python scripts/validate_results.py
 ```
 
-The scripts validate manifest coverage, excluded artifacts, required metric files, terminology guardrails, and checksum consistency for copied materials.
+Эти скрипты проверяют покрытие manifests, исключенные artifacts, наличие обязательных metric files, терминологические guardrails и согласованность checksums для скопированных материалов.
