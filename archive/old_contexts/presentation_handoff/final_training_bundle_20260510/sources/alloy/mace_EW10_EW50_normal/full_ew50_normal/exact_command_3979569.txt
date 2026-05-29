@@ -1,0 +1,27 @@
+mace_run_train \
+  --name="alloy_mace_full_ew50_normal" \
+  --foundation_model="/home/brmannanov/coursework/mace_models/2023-12-10-mace-128-L0_energy_epoch-249.model" \
+  --multiheads_finetuning=False \
+  --train_file="/home/brmannanov/coursework/new_datasets/alloy/convert/train_alloy.xyz" \
+  --valid_file="/home/brmannanov/coursework/new_datasets/alloy/convert/valid_alloy.xyz" \
+  --energy_key=energy \
+  --forces_key=forces \
+  --atomic_numbers="[23,41,42,73,74]" \
+  --E0s=average \
+  --scaling=rms_forces_scaling \
+  --batch_size=8 \
+  --lr=0.001 \
+  --max_num_epochs=200 \
+  --patience=50 \
+  --eval_interval=25 \
+  --loss=weighted \
+  --energy_weight="50" \
+  --forces_weight="100" \
+  --save_all_checkpoints \
+  --keep_checkpoints \
+  --device=cuda \
+  --seed=42 \
+  --log_dir="/home/brmannanov/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew50_normal/logs" \
+  --results_dir="/home/brmannanov/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew50_normal/results" \
+  --checkpoints_dir="/home/brmannanov/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew50_normal/checkpoints" \
+  --model_dir="/home/brmannanov/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew50_normal/models"

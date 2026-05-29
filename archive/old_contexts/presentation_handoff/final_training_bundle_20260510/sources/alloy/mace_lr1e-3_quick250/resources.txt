@@ -1,0 +1,44 @@
+DATE: 2026-05-09T09:27:30+03:00
+JOBID: 3977716
+NODELIST: cn-043
+PARTITION: gpu-ef-quick
+CPUS_PER_TASK: 8
+GPUS_ON_NODE: 1
+
+Input files:
+-rw-r--r-- 1 brmannanov users 8.0M Apr  1 23:51 /home/brmannanov/coursework/new_datasets/alloy/convert/train_alloy.xyz
+-rw-r--r-- 1 brmannanov users 1.4M Apr  1 23:51 /home/brmannanov/coursework/new_datasets/alloy/convert/valid_alloy.xyz
+
+Foundation model:
+-rw-r--r-- 1 brmannanov users 32M Jan 11  2024 /home/brmannanov/coursework/mace_models/2023-12-10-mace-128-L0_energy_epoch-249.model
+
+Python / torch:
+/home/brmannanov/.conda/envs/mace/bin/python
+Python 3.11.13
+torch 2.6.0+cu124 cuda True
+gpu_name NVIDIA A100-SXM4-80GB
+
+nvidia-smi:
+Sat May  9 09:28:29 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 590.48.01              Driver Version: 590.48.01      CUDA Version: 13.1     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:07:00.0 Off |                    0 |
+| N/A   28C    P0             61W /  400W |       0MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+MACE command:
+mace_run_train --name=alloy_ft_lr0p001_quick3h --foundation_model=/home/brmannanov/coursework/mace_models/2023-12-10-mace-128-L0_energy_epoch-249.model --multiheads_finetuning=False --train_file=/home/brmannanov/coursework/new_datasets/alloy/convert/train_alloy.xyz --valid_file=/home/brmannanov/coursework/new_datasets/alloy/convert/valid_alloy.xyz --energy_key=energy --forces_key=forces --atomic_numbers=[23,41,42,73,74] --E0s=average --scaling=rms_forces_scaling --batch_size=8 --lr=0.001 --max_num_epochs=250 --patience=75 --eval_interval=25 --device=cuda --seed=42

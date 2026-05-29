@@ -1,0 +1,19 @@
+DATE: 2026-05-08T18:58:22+0300
+JOBID: 3975249
+NODELIST: cn-038
+NTASKS: 8
+CPUS_PER_TASK: 1
+
+Input JSON files:
+-rw-r--r-- 1 brmannanov users 21M Apr  1 22:48 /home/brmannanov/coursework/new_datasets/water/convert/train_H2O.json
+-rw-r--r-- 1 brmannanov users 5.2M Apr  1 22:48 /home/brmannanov/coursework/new_datasets/water/convert/valid_H2O.json
+
+Script:
+-rw-r--r-- 1 brmannanov users 6.8K May  8 18:19 /home/brmannanov/coursework/new_datasets/water/mtp_clean20_20260508/train_water_mtp20_clean.py
+
+Python:
+/home/brmannanov/.conda/envs/mlip-4/bin/python
+Python 3.11.13
+
+MPI command:
+mpirun -np 8 python /home/brmannanov/coursework/new_datasets/water/mtp_clean20_20260508/train_water_mtp20_clean.py

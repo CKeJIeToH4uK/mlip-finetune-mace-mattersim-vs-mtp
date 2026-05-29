@@ -1,0 +1,57 @@
+{
+  "model_label": "MTP-20",
+  "model_type": "mtp",
+  "dataset": "water_H2O",
+  "species_order": [
+    1,
+    8
+  ],
+  "level": 20,
+  "n_params": 450,
+  "train_db": "/home/brmannanov/coursework/new_datasets/water/convert/train_H2O.json",
+  "valid_db": "/home/brmannanov/coursework/new_datasets/water/convert/valid_H2O.json",
+  "out_dir": "/home/brmannanov/coursework/new_datasets/water/mtp_clean20_20260508",
+  "model_path": "/home/brmannanov/coursework/new_datasets/water/mtp_clean20_20260508/mtp20_trained.json",
+  "sbatch_file": "/home/brmannanov/coursework/new_datasets/water/mtp_clean20_20260508/train_water_mtp20_clean.sbatch",
+  "exact_command_file": "/home/brmannanov/coursework/new_datasets/water/mtp_clean20_20260508/exact_command.txt",
+  "created_at": "2026-05-09T02:54:32",
+  "hostname": "cn-038",
+  "slurm_job_id": "3975249",
+  "slurm_nodelist": "cn-038",
+  "slurm_ntasks": "8",
+  "train_result": "((), [np.float64(0.3313790675724118), 0.0, <MTP object, n_params = 450, species = ['H', 'O']>])",
+  "raw_errors": {
+    "train": "Errors (MAE, RMSE, MAXAE)\nEnergy      = 2.705261e-01, 3.885901e-01, 1.966647e+00\nEnergy/Atom = 1.408990e-03, 2.023907e-03, 1.024295e-02\nForces      = 1.117706e-01, 1.783083e-01, 9.373806e+00\nStress      = 0.000000e+00, 0.000000e+00, 0.000000e+00\nCharges     = 0.000000e+00, 0.000000e+00, 0.000000e+00\n",
+    "valid": "Errors (MAE, RMSE, MAXAE)\nEnergy      = 2.961030e-01, 4.916349e-01, 3.328831e+00\nEnergy/Atom = 1.542203e-03, 2.560598e-03, 1.733766e-02\nForces      = 1.082611e-01, 1.917936e-01, 1.500692e+01\nStress      = 0.000000e+00, 0.000000e+00, 0.000000e+00\nCharges     = 0.000000e+00, 0.000000e+00, 0.000000e+00\n"
+  },
+  "metrics": {
+    "train": {
+      "energy": {
+        "mae_meV_atom": 1.40899,
+        "rmse_meV_atom": 2.0239070000000003,
+        "maxae_meV_atom": 10.24295,
+        "units": "meV/atom"
+      },
+      "forces": {
+        "mae_meV_A": 111.7706,
+        "rmse_meV_A": 178.3083,
+        "maxae_meV_A": 9373.806,
+        "units": "meV/Å"
+      }
+    },
+    "valid": {
+      "energy": {
+        "mae_meV_atom": 1.542203,
+        "rmse_meV_atom": 2.5605979999999997,
+        "maxae_meV_atom": 17.33766,
+        "units": "meV/atom"
+      },
+      "forces": {
+        "mae_meV_A": 108.2611,
+        "rmse_meV_A": 191.7936,
+        "maxae_meV_A": 15006.919999999998,
+        "units": "meV/Å"
+      }
+    }
+  }
+}

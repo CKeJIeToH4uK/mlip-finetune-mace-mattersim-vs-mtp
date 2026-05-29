@@ -1,0 +1,41 @@
+DATE: 2026-05-09T11:53:07+03:00
+JOBID: 3978082
+NODELIST: cn-045
+PARTITION: gpu-ef-quick
+CPUS_PER_TASK: 8
+GPUS_ON_NODE: 1
+
+Input files:
+-rw-r--r-- 1 brmannanov users 8.0M Apr  1 23:51 /home/brmannanov/coursework/new_datasets/alloy/convert/train_alloy.xyz
+-rw-r--r-- 1 brmannanov users 1.4M Apr  1 23:51 /home/brmannanov/coursework/new_datasets/alloy/convert/valid_alloy.xyz
+
+Foundation model:
+-rw-r--r-- 1 brmannanov users 32M Jan 11  2024 /home/brmannanov/coursework/mace_models/2023-12-10-mace-128-L0_energy_epoch-249.model
+
+Python / torch:
+/home/brmannanov/.conda/envs/mace/bin/python
+Python 3.11.13
+torch 2.6.0+cu124 cuda True
+gpu_name NVIDIA A100-SXM4-80GB
+
+nvidia-smi:
+Sat May  9 11:54:07 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 590.48.01              Driver Version: 590.48.01      CUDA Version: 13.1     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:C8:00.0 Off |                    0 |
+| N/A   27C    P0             58W /  400W |       0MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+

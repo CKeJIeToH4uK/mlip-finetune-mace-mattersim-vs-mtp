@@ -1,0 +1,73 @@
+# Learning Curves Source Summary
+
+Potential sources for learning curves and training dynamics. Large/raw logs are represented by snippets when copied.
+
+- `for_gpt/metrics/06_training_dynamics_summary.md` (9594 bytes): copied/generated elsewhere if selected
+- `repo/coursework/FLiNaK/run_all/3909461/train.log` (320197 bytes): copied/generated elsewhere if selected
+- `repo/coursework/FLiNaK/run_split/3909462/train.log` (320196 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mace_finetune/ft_300K/results/ft_300K_run-42_train.txt` (832175 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mace_finetune/ft_300K/train.log` (77720 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mace_finetune/runs/epoch_vs_err_25/epoch_vs_err_25_valid_indices_42.txt` (93 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mace_finetune/runs/epoch_vs_err_25/logs/epoch_vs_err_25_run-42.log` (11261 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mace_finetune/runs/epoch_vs_err_25/logs/epoch_vs_err_25_run-42_debug.log` (19893 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mace_finetune/runs/epoch_vs_err_25/resources.txt` (1945 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mace_finetune/runs/epoch_vs_err_25/results/epoch_vs_err_25_run-42_train.txt` (620676 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mace_finetune/runs/epoch_vs_err_25/train.log` (17045 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/1-5million/5m/train.log` (320419 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/epoch_vs_err/best_err/eval_20260225_144300.txt` (1294 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/epoch_vs_err/best_err/warnings_20260225_144300.log` (0 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/epoch_vs_err/resources.txt` (1945 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/epoch_vs_err/train.log` (320419 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/ft_300K_3634252/train.log` (582753 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/ft_300K_3634361/train.log` (0 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/norm_nenorm/norm/train.log` (320417 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/norm_nenorm/not_norm/train.log` (318570 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/shift/train.log` (320416 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr1e-4_bs16/train.log` (320370 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr1e-4_bs32/train.log` (320369 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr1e-4_bs64/train.log` (320369 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr1e-5_bs16/train.log` (320369 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr1e-5_bs32/train.log` (320370 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr1e-5_bs64/train.log` (320369 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr1e-5_bs8/train.log` (320388 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr2e-5_bs16/train.log` (320454 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr2e-5_bs32/train.log` (320369 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr2e-5_bs64/train.log` (320369 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr2e-5_bs8/train.log` (320578 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr5e-5_bs16/train.log` (320370 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr5e-5_bs32/train.log` (320369 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr5e-5_bs64/train.log` (320369 bytes): copied/generated elsewhere if selected
+- `repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr5e-5_bs8/train.log` (320375 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/alloy/mace/results/alloy_ft_run-42_train.txt` (2689668 bytes): not copied; too large for lightweight context
+- `repo/coursework/new_datasets/alloy/mace/train.log` (48742 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/alloy/mace_ablation_20260509/freeze1_ew10_normal/results/alloy_mace_freeze1_ew10_normal_run-42_train.txt` (2604282 bytes): not copied; too large for lightweight context
+- `repo/coursework/new_datasets/alloy/mace_ablation_20260509/freeze1_ew10_normal/train.log` (14821 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/alloy/mace_ablation_20260509/lora_ew10_normal/results/alloy_mace_lora_ew10_normal_run-42_train.txt` (2595429 bytes): not copied; too large for lightweight context
+- `repo/coursework/new_datasets/alloy/mace_ablation_20260509/lora_ew10_normal/train.log` (21731 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/alloy/mace_ablation_20260509/stage2_normal/results/alloy_mace_stage2_normal_run-42_train.txt` (2602859 bytes): not copied; too large for lightweight context
+- `repo/coursework/new_datasets/alloy/mace_ablation_20260509/stage2_normal/train.log` (17318 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew10_normal/results/alloy_mace_full_ew10_normal_run-42_train.txt` (2604226 bytes): not copied; too large for lightweight context
+- `repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew10_normal/train.log` (14700 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew50_normal/results/alloy_mace_full_ew50_normal_run-42_train.txt` (2603498 bytes): not copied; too large for lightweight context
+- `repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew50_normal/train.log` (14701 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/alloy/mace_ablation_normal_protocols_20260509/freeze1_ew10_normal/results/alloy_mace_freeze1_ew10_normal_run-42_train.txt` (2604282 bytes): not copied; too large for lightweight context
+- `repo/coursework/new_datasets/alloy/mace_ablation_normal_protocols_20260509/freeze1_ew10_normal/train.log` (14821 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/alloy/mace_ablation_normal_protocols_20260509/lora_ew10_normal/results/alloy_mace_lora_ew10_normal_run-42_train.txt` (2595429 bytes): not copied; too large for lightweight context
+- `repo/coursework/new_datasets/alloy/mace_ablation_normal_protocols_20260509/lora_ew10_normal/train.log` (21731 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/alloy/mace_ablation_normal_protocols_20260509/stage2_normal/results/alloy_mace_stage2_normal_run-42_train.txt` (2602859 bytes): not copied; too large for lightweight context
+- `repo/coursework/new_datasets/alloy/mace_ablation_normal_protocols_20260509/stage2_normal/train.log` (17318 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/alloy/mace_retrain_lr0p001_fair200_quick3h_20260509/results/alloy_ft_lr0p001_fair200_run-42_train.txt` (2610316 bytes): not copied; too large for lightweight context
+- `repo/coursework/new_datasets/alloy/mace_retrain_lr0p001_fair200_quick3h_20260509/train.log` (14657 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/alloy/mace_retrain_lr0p001_quick3h_20260509/results/alloy_ft_lr0p001_quick3h_run-42_train.txt` (3268452 bytes): not copied; too large for lightweight context
+- `repo/coursework/new_datasets/alloy/mace_retrain_lr0p001_quick3h_20260509/train.log` (14887 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/alloy/mattersim/train.log` (130935 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/water/mace/results/water_ft_run-42_train.txt` (3097810 bytes): not copied; too large for lightweight context
+- `repo/coursework/new_datasets/water/mace/train.log` (38543 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/water/mattersim/train.log` (130719 bytes): copied/generated elsewhere if selected
+- `repo/coursework/new_datasets/water/mtp_clean20_20260508/train.log` (56472 bytes): copied/generated elsewhere if selected
+- `repo/coursework/presentation_handoff/protocols_eval_addendum_20260510/sources/mace_ablation_normal_protocols_20260509/freeze1_ew10_normal/results/alloy_mace_freeze1_ew10_normal_run-42_train.txt` (2604282 bytes): not copied; too large for lightweight context
+- `repo/coursework/presentation_handoff/protocols_eval_addendum_20260510/sources/mace_ablation_normal_protocols_20260509/freeze1_ew10_normal/train.log` (14821 bytes): copied/generated elsewhere if selected
+- `repo/coursework/presentation_handoff/protocols_eval_addendum_20260510/sources/mace_ablation_normal_protocols_20260509/lora_ew10_normal/results/alloy_mace_lora_ew10_normal_run-42_train.txt` (2595429 bytes): not copied; too large for lightweight context
+- `repo/coursework/presentation_handoff/protocols_eval_addendum_20260510/sources/mace_ablation_normal_protocols_20260509/lora_ew10_normal/train.log` (21731 bytes): copied/generated elsewhere if selected
+- `repo/coursework/presentation_handoff/protocols_eval_addendum_20260510/sources/mace_ablation_normal_protocols_20260509/stage2_normal/results/alloy_mace_stage2_normal_run-42_train.txt` (2602859 bytes): not copied; too large for lightweight context
+- `repo/coursework/presentation_handoff/protocols_eval_addendum_20260510/sources/mace_ablation_normal_protocols_20260509/stage2_normal/train.log` (17318 bytes): copied/generated elsewhere if selected

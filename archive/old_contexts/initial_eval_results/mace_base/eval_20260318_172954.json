@@ -1,0 +1,13 @@
+{
+  "model": "MACE_base_foundation",
+  "model_path": "/home/brmannanov/coursework/mace_models/2023-12-10-mace-128-L0_energy_epoch-249.model",
+  "n_cfg": 1669,
+  "rmse_E_per_atom_eV": 647.6319772429972,
+  "mae_E_per_atom_eV": 647.631977230238,
+  "rmse_F_eV_A": 0.40585606512180594,
+  "mae_F_eV_A": 0.2683283231649451,
+  "rmse_F_meV_A": 405.85606512180595,
+  "mae_F_meV_A": 268.3283231649451,
+  "time_sec_total": 42.03457994759083,
+  "time_sec_per_cfg": 0.025185488284955558
+}

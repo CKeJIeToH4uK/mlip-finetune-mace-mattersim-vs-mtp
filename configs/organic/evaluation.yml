@@ -1,0 +1,8 @@
+system: organic
+splits:
+  - test_300K
+  - test_600K
+  - test_1200K
+metric_source: results/verified_metrics/organic_metrics_verified_20260511.csv
+raw_eval_refs: provenance/raw_eval_refs/organic
+status: final_main

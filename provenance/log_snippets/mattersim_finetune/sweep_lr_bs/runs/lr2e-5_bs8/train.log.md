@@ -1,0 +1,138 @@
+# Log Snippet: repo/coursework/mattersim_finetune/sweep_lr_bs/runs/lr2e-5_bs8/train.log
+
+Original size: 320578 bytes. Full raw log not copied.
+
+1: [rank0]:[W225 17:19:13.410433880 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a 
+2: [32m2026-02-25 17:19:14.414[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m65[0m - [1mProcessing training datasets...[0m
+29:            0.0000,    0.0000,    0.0000,    0.0000,    0.0000])
+30: [32m2026-02-25 17:19:16.775[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m104[0m - [1mProcessing validation datasets...[0m
+31: [32m2026-02-25 17:19:21.540[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mfrom_checkpoint[0m:[36m877[0m - [1mLoading the pre-trained mattersim-v1.0.0-1M.pth model[0m
+32: [32m2026-02-25 17:19:21.710[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m237[0m - [1mNumber of trainable parameters: 890,034[0m
+33: [32m2026-02-25 17:19:21.710[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 0 / 500[0m
+34: /home/brmannanov/.conda/envs/mlip-4/lib/python3.11/site-packages/torch/autograd/graph.py:823: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  
+35: grad.sizes() = [1, 128], strides() = [1, 1]
+37:   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+38: [32m2026-02-25 17:19:35.124[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0069, MAE(e): 0.0097, MAE(f): 0.6843, MAE(s): 0.0000, Time: 13.41s, lr: 0.00002000
+39: [0m
+40: [32m2026-02-25 17:19:48.415[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0069, MAE(e): 0.0047, MAE(f): 0.6911, MAE(s): 0.0000, Time: 13.29s, lr: 0.00002000
+41: [0m
+42: [32m2026-02-25 17:19:48.421[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 1 / 500[0m
+43: [32m2026-02-25 17:19:55.094[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0067, MAE(e): 0.0047, MAE(f): 0.6750, MAE(s): 0.0000, Time: 6.67s, lr: 0.00002000
+44: [0m
+45: [32m2026-02-25 17:20:05.535[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0068, MAE(e): 0.0047, MAE(f): 0.6799, MAE(s): 0.0000, Time: 10.44s, lr: 0.00002000
+46: [0m
+47: [32m2026-02-25 17:20:05.541[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 2 / 500[0m
+48: [32m2026-02-25 17:20:12.048[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0065, MAE(e): 0.0047, MAE(f): 0.6490, MAE(s): 0.0000, Time: 6.51s, lr: 0.00002000
+49: [0m
+50: [32m2026-02-25 17:20:22.997[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0065, MAE(e): 0.0045, MAE(f): 0.6493, MAE(s): 0.0000, Time: 10.95s, lr: 0.00002000
+51: [0m
+52: [32m2026-02-25 17:20:23.003[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 3 / 500[0m
+53: [32m2026-02-25 17:20:31.117[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0051, MAE(e): 0.0044, MAE(f): 0.5174, MAE(s): 0.0000, Time: 8.11s, lr: 0.00002000
+54: [0m
+55: [32m2026-02-25 17:20:43.274[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0050, MAE(e): 0.0036, MAE(f): 0.4992, MAE(s): 0.0000, Time: 12.15s, lr: 0.00002000
+56: [0m
+57: [32m2026-02-25 17:20:43.280[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 4 / 500[0m
+58: [32m2026-02-25 17:20:52.228[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0032, MAE(e): 0.0056, MAE(f): 0.3215, MAE(s): 0.0000, Time: 8.95s, lr: 0.00002000
+59: [0m
+60: [32m2026-02-25 17:21:05.345[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0032, MAE(e): 0.0041, MAE(f): 0.3253, MAE(s): 0.0000, Time: 13.11s, lr: 0.00002000
+61: [0m
+62: [32m2026-02-25 17:21:05.350[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 5 / 500[0m
+63: [32m2026-02-25 17:21:12.390[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0025, MAE(e): 0.0056, MAE(f): 0.2535, MAE(s): 0.0000, Time: 7.04s, lr: 0.00002000
+64: [0m
+65: [32m2026-02-25 17:21:21.885[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0026, MAE(e): 0.0035, MAE(f): 0.2607, MAE(s): 0.0000, Time: 9.49s, lr: 0.00002000
+66: [0m
+67: [32m2026-02-25 17:21:21.889[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 6 / 500[0m
+68: [32m2026-02-25 17:21:29.155[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0022, MAE(e): 0.0050, MAE(f): 0.2204, MAE(s): 0.0000, Time: 7.27s, lr: 0.00002000
+69: [0m
+70: [32m2026-02-25 17:21:40.224[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0022, MAE(e): 0.0034, MAE(f): 0.2278, MAE(s): 0.0000, Time: 11.07s, lr: 0.00002000
+71: [0m
+72: [32m2026-02-25 17:21:40.229[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 7 / 500[0m
+73: [32m2026-02-25 17:21:47.907[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0019, MAE(e): 0.0039, MAE(f): 0.1961, MAE(s): 0.0000, Time: 7.68s, lr: 0.00002000
+74: [0m
+75: [32m2026-02-25 17:21:59.682[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0020, MAE(e): 0.0032, MAE(f): 0.2040, MAE(s): 0.0000, Time: 11.77s, lr: 0.00002000
+76: [0m
+77: [32m2026-02-25 17:21:59.687[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 8 / 500[0m
+78: [32m2026-02-25 17:22:07.075[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0017, MAE(e): 0.0034, MAE(f): 0.1762, MAE(s): 0.0000, Time: 7.39s, lr: 0.00002000
+79: [0m
+80: [32m2026-02-25 17:22:17.177[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0018, MAE(e): 0.0030, MAE(f): 0.1847, MAE(s): 0.0000, Time: 10.10s, lr: 0.00002000
+81: [0m
+82: [32m2026-02-25 17:22:17.189[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 9 / 500[0m
+83: [32m2026-02-25 17:22:25.043[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0016, MAE(e): 0.0039, MAE(f): 0.1594, MAE(s): 0.0000, Time: 7.85s, lr: 0.00002000
+84: [0m
+85: [32m2026-02-25 17:22:36.102[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0016, MAE(e): 0.0028, MAE(f): 0.1685, MAE(s): 0.0000, Time: 11.05s, lr: 0.00002000
+86: [0m
+87: [32m2026-02-25 17:22:36.107[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 10 / 500[0m
+88: [32m2026-02-25 17:22:43.534[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0014, MAE(e): 0.0035, MAE(f): 0.1455, MAE(s): 0.0000, Time: 7.43s, lr: 0.00002000
+89: [0m
+90: [32m2026-02-25 17:22:53.527[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0015, MAE(e): 0.0026, MAE(f): 0.1549, MAE(s): 0.0000, Time: 9.99s, lr: 0.00002000
+91: [0m
+92: [32m2026-02-25 17:22:53.532[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 11 / 500[0m
+93: [32m2026-02-25 17:23:00.527[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0013, MAE(e): 0.0035, MAE(f): 0.1342, MAE(s): 0.0000, Time: 6.99s, lr: 0.00002000
+94: [0m
+95: [32m2026-02-25 17:23:10.304[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0014, MAE(e): 0.0025, MAE(f): 0.1433, MAE(s): 0.0000, Time: 9.78s, lr: 0.00002000
+96: [0m
+97: [32m2026-02-25 17:23:10.309[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 12 / 500[0m
+98: [32m2026-02-25 17:23:18.759[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0012, MAE(e): 0.0031, MAE(f): 0.1245, MAE(s): 0.0000, Time: 8.45s, lr: 0.00002000
+99: [0m
+100: [32m2026-02-25 17:23:31.308[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0013, MAE(e): 0.0023, MAE(f): 0.1332, MAE(s): 0.0000, Time: 12.55s, lr: 0.00002000
+101: [0m
+102: [32m2026-02-25 17:23:31.312[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 13 / 500[0m
+103: [32m2026-02-25 17:23:38.104[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0011, MAE(e): 0.0027, MAE(f): 0.1154, MAE(s): 0.0000, Time: 6.79s, lr: 0.00002000
+104: [0m
+105: [32m2026-02-25 17:23:48.643[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0012, MAE(e): 0.0022, MAE(f): 0.1245, MAE(s): 0.0000, Time: 10.54s, lr: 0.00002000
+106: [0m
+107: [32m2026-02-25 17:23:48.653[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 14 / 500[0m
+108: [32m2026-02-25 17:23:56.828[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0010, MAE(e): 0.0026, MAE(f): 0.1089, MAE(s): 0.0000, Time: 8.17s, lr: 0.00002000
+109: [0m
+110: [32m2026-02-25 17:24:07.959[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0011, MAE(e): 0.0021, MAE(f): 0.1168, MAE(s): 0.0000, Time: 11.13s, lr: 0.00002000
+111: [0m
+112: [32m2026-02-25 17:24:07.964[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 15 / 500[0m
+113: [32m2026-02-25 17:24:16.659[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0010, MAE(e): 0.0023, MAE(f): 0.1040, MAE(s): 0.0000, Time: 8.69s, lr: 0.00002000
+114: [0m
+115: [32m2026-02-25 17:24:29.428[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0011, MAE(e): 0.0020, MAE(f): 0.1105, MAE(s): 0.0000, Time: 12.77s, lr: 0.00002000
+116: [0m
+117: [32m2026-02-25 17:24:29.434[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 16 / 500[0m
+118: [32m2026-02-25 17:24:37.343[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0010, MAE(e): 0.0024, MAE(f): 0.1001, MAE(s): 0.0000, Time: 7.91s, lr: 0.00002000
+119: [0m
+120: [32m2026-02-25 17:24:47.897[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0010, MAE(e): 0.0019, MAE(f): 0.1054, MAE(s): 0.0000, Time: 10.55s, lr: 0.00002000
+121: [0m
+122: [32m2026-02-25 17:24:47.901[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 17 / 500[0m
+123: [32m2026-02-25 17:24:56.802[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0009, MAE(e): 0.0027, MAE(f): 0.0972, MAE(s): 0.0000, Time: 8.90s, lr: 0.00002000
+124: [0m
+125: [32m2026-02-25 17:25:08.884[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0010, MAE(e): 0.0018, MAE(f): 0.1014, MAE(s): 0.0000, Time: 12.08s, lr: 0.00002000
+126: [0m
+127: [32m2026-02-25 17:25:08.890[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 18 / 500[0m
+128: [32m2026-02-25 17:25:16.983[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0009, MAE(e): 0.0025, MAE(f): 0.0941, MAE(s): 0.0000, Time: 8.09s, lr: 0.00002000
+129: [0m
+130: [32m2026-02-25 17:25:27.925[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0009, MAE(e): 0.0017, MAE(f): 0.0982, MAE(s): 0.0000, Time: 10.94s, lr: 0.00002000
+131: [0m
+132: [32m2026-02-25 17:25:27.930[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 19 / 500[0m
+133: [32m2026-02-25 17:25:38.906[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0009, MAE(e): 0.0021, MAE(f): 0.0915, MAE(s): 0.0000, Time: 10.98s, lr: 0.00002000
+134: [0m
+135: [32m2026-02-25 17:25:50.911[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0009, MAE(e): 0.0017, MAE(f): 0.0953, MAE(s): 0.0000, Time: 12.00s, lr: 0.00002000
+136: [0m
+137: [32m2026-02-25 17:25:50.918[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 20 / 500[0m
+138: [32m2026-02-25 17:26:00.015[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0009, MAE(e): 0.0022, MAE(f): 0.0895, MAE(s): 0.0000, Time: 9.10s, lr: 0.00002000
+139: [0m
+140: [32m2026-02-25 17:26:12.364[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0009, MAE(e): 0.0017, MAE(f): 0.0928, MAE(s): 0.0000, Time: 12.35s, lr: 0.00002000
+141: [0m
+142: [32m2026-02-25 17:26:12.372[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 21 / 500[0m
+143: [32m2026-02-25 17:26:20.144[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0008, MAE(e): 0.0025, MAE(f): 0.0874, MAE(s): 0.0000, Time: 7.77s, lr: 0.00002000
+144: [0m
+145: [32m2026-02-25 17:26:30.783[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0009, MAE(e): 0.0016, MAE(f): 0.0906, MAE(s): 0.0000, Time: 10.63s, lr: 0.00002000
+146: [0m
+147: [32m2026-02-25 17:26:30.788[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 22 / 500[0m
+148: [32m2026-02-25 17:26:38.841[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0008, MAE(e): 0.0026, MAE(f): 0.0858, MAE(s): 0.0000, Time: 8.05s, lr: 0.00002000
+149: [0m
+150: [32m2026-02-25 17:26:48.209[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0008, MAE(e): 0.0016, MAE(f): 0.0886, MAE(s): 0.0000, Time: 9.36s, lr: 0.00002000
+151: [0m
+152: [32m2026-02-25 17:26:48.215[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 23 / 500[0m
+153: [32m2026-02-25 17:26:55.626[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0008, MAE(e): 0.0026, MAE(f): 0.0838, MAE(s): 0.0000, Time: 7.41s, lr: 0.00002000
+154: [0m
+155: [32m2026-02-25 17:27:05.897[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0008, MAE(e): 0.0016, MAE(f): 0.0867, MAE(s): 0.0000, Time: 10.27s, lr: 0.00002000
+156: [0m
+157: [32m2026-02-25 17:27:05.901[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_model[0m:[36m241[0m - [1mEpoch: 24 / 500[0m
+158: [32m2026-02-25 17:27:12.383[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mtrain: Loss: 0.0008, MAE(e): 0.0022, MAE(f): 0.0821, MAE(s): 0.0000, Time: 6.48s, lr: 0.00002000
+159: [0m
+160: [32m2026-02-25 17:27:23.517[0m | [1mINFO    [0m | [36mmattersim.forcefield.potential[0m:[36mtrain_one_epoch[0m:[36m618[0m - [1mval: Loss: 0.0008, MAE(e): 0.0015, MAE(f): 0.0849, MAE(s): 0.0000, Time: 11.13s, lr: 0.00002000
+161: [0m

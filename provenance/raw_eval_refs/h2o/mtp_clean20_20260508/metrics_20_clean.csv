@@ -1,0 +1,5 @@
+model_label,dataset,split,metric,mae,rmse,units,level,n_params
+MTP-20,water_H2O,train,energy,1.40899,2.0239070000000003,meV/atom,20,450
+MTP-20,water_H2O,train,forces,111.7706,178.3083,meV/Å,20,450
+MTP-20,water_H2O,valid,energy,1.542203,2.5605979999999997,meV/atom,20,450
+MTP-20,water_H2O,valid,forces,108.2611,191.7936,meV/Å,20,450

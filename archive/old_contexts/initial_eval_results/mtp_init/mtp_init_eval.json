@@ -1,0 +1,16 @@
+{
+  "model": "MTP_init_random",
+  "level": 20,
+  "seed": 42,
+  "species_order": [
+    1,
+    6,
+    7,
+    8
+  ],
+  "train_db": "/home/brmannanov/coursework/databases/train_300K_from_xyz.json",
+  "valid_db": "/home/brmannanov/coursework/databases/test_300K_from_xyz.json",
+  "train_errors": "Errors (MAE, RMSE, MAXAE)\nEnergy      = 1.766042e+04, 1.766042e+04, 1.766080e+04\nEnergy/Atom = 6.540894e+02, 6.540894e+02, 6.541036e+02\nForces      = 7.057694e-01, 9.479776e-01, 5.302478e+00\nStress      = 0.000000e+00, 0.000000e+00, 0.000000e+00\nCharges     = 0.000000e+00, 0.000000e+00, 0.000000e+00\n",
+  "valid_errors": "Errors (MAE, RMSE, MAXAE)\nEnergy      = 1.766040e+04, 1.766040e+04, 1.766084e+04\nEnergy/Atom = 6.540891e+02, 6.540891e+02, 6.541052e+02\nForces      = 7.148371e-01, 9.606963e-01, 5.605635e+00\nStress      = 0.000000e+00, 0.000000e+00, 0.000000e+00\nCharges     = 0.000000e+00, 0.000000e+00, 0.000000e+00\n",
+  "potential_file": "/home/brmannanov/coursework/initial_eval/results/mtp_init/mtp_init_level20.json"
+}

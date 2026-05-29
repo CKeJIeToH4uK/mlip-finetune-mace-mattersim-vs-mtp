@@ -1,0 +1,16 @@
+{
+  "model_type": "mtp",
+  "model_name": "mtp16",
+  "model_path": "/home/brmannanov/coursework/mtp_runs/level16_run1/mtp16_trained.json",
+  "dataset_path": "/home/brmannanov/coursework/databases/current_1200K/test_from_xyz.json",
+  "dataset_name": "test_1200K",
+  "raw_errors": "Errors (MAE, RMSE, MAXAE)\nEnergy      = 3.990033e-01, 5.519348e-01, 3.652346e+00\nEnergy/Atom = 1.477790e-02, 2.044203e-02, 1.352721e-01\nForces      = 4.419366e-01, 7.482429e-01, 3.023133e+01\nStress      = 0.000000e+00, 0.000000e+00, 0.000000e+00\nCharges     = 0.000000e+00, 0.000000e+00, 0.000000e+00\n",
+  "mae_E_eV": 0.3990033,
+  "rmse_E_eV": 0.5519348,
+  "mae_E_per_atom_eV": 0.0147779,
+  "rmse_E_per_atom_eV": 0.02044203,
+  "mae_F_eV_A": 0.4419366,
+  "rmse_F_eV_A": 0.7482429,
+  "mae_F_meV_A": 441.9366,
+  "rmse_F_meV_A": 748.2429000000001
+}

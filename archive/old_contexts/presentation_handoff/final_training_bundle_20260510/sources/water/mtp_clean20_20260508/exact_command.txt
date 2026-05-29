@@ -1,0 +1,1 @@
+mpirun --bind-to none --map-by slot -np 8 python /home/brmannanov/coursework/new_datasets/water/mtp_clean20_20260508/train_water_mtp20_clean.py

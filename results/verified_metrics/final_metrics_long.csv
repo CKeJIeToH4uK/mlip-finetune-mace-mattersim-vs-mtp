@@ -1,0 +1,31 @@
+dataset,model_label,protocol,split,metric,mae,rmse,units,source_file,notes
+water_H2O,MTP-16,"old mislabeled mtp20 folder, actual level=16",valid,energy,3.901132,5.859228,meV/atom,repo/coursework/new_datasets/water/mtp/metrics.json,actual metrics.json level=16
+water_H2O,MTP-16,"old mislabeled mtp20 folder, actual level=16",valid,forces,333.0573,480.3925,meV/Å,repo/coursework/new_datasets/water/mtp/metrics.json,actual metrics.json level=16
+water_H2O,MTP-20,clean level 20,train,energy,1.40899,2.0239070000000003,meV/atom,repo/coursework/new_datasets/water/mtp_clean20_20260508/metrics_20_clean.json,level=20; n_params=450
+water_H2O,MTP-20,clean level 20,train,forces,111.7706,178.3083,meV/Å,repo/coursework/new_datasets/water/mtp_clean20_20260508/metrics_20_clean.json,level=20; n_params=450
+water_H2O,MTP-20,clean level 20,valid,energy,1.542203,2.5605979999999997,meV/atom,repo/coursework/new_datasets/water/mtp_clean20_20260508/metrics_20_clean.json,level=20; n_params=450
+water_H2O,MTP-20,clean level 20,valid,forces,108.2611,191.7936,meV/Å,repo/coursework/new_datasets/water/mtp_clean20_20260508/metrics_20_clean.json,level=20; n_params=450
+alloy_MoNbTaVW,MACE-old-lr1e-2,default old lr=0.01,train,energy,37.51284493821095,91.23186361825394,meV/atom,repo/coursework/new_datasets/alloy/mace/eval_train.json,
+alloy_MoNbTaVW,MACE-old-lr1e-2,default old lr=0.01,train,forces,66.56744915990116,97.60573327955008,meV/Å,repo/coursework/new_datasets/alloy/mace/eval_train.json,
+alloy_MoNbTaVW,MACE-old-lr1e-2,default old lr=0.01,valid,energy,34.743671232507324,64.44756324674887,meV/atom,repo/coursework/new_datasets/alloy/mace/eval_valid.json,
+alloy_MoNbTaVW,MACE-old-lr1e-2,default old lr=0.01,valid,forces,70.6028489636763,123.24710566119987,meV/Å,repo/coursework/new_datasets/alloy/mace/eval_valid.json,
+alloy_MoNbTaVW,MACE-lr1e-3-quick250,lr=0.001 quick250 default loss,train,energy,24.582087686249263,79.68257634846789,meV/atom,repo/coursework/new_datasets/alloy/mace_retrain_lr0p001_quick3h_20260509/eval_train.json,
+alloy_MoNbTaVW,MACE-lr1e-3-quick250,lr=0.001 quick250 default loss,train,forces,56.093913705746345,80.2330963733241,meV/Å,repo/coursework/new_datasets/alloy/mace_retrain_lr0p001_quick3h_20260509/eval_train.json,
+alloy_MoNbTaVW,MACE-lr1e-3-quick250,lr=0.001 quick250 default loss,valid,energy,23.59851150048436,73.00356373568498,meV/atom,repo/coursework/new_datasets/alloy/mace_retrain_lr0p001_quick3h_20260509/eval_valid.json,
+alloy_MoNbTaVW,MACE-lr1e-3-quick250,lr=0.001 quick250 default loss,valid,forces,62.263754202946224,114.51662924367182,meV/Å,repo/coursework/new_datasets/alloy/mace_retrain_lr0p001_quick3h_20260509/eval_valid.json,
+alloy_MoNbTaVW,MACE-lr1e-3-fair200,lr=0.001 fair200 default loss,train,energy,25.497397485975824,85.95002426582433,meV/atom,repo/coursework/new_datasets/alloy/mace_retrain_lr0p001_fair200_quick3h_20260509/eval_train.json,
+alloy_MoNbTaVW,MACE-lr1e-3-fair200,lr=0.001 fair200 default loss,train,forces,56.698259417581035,82.42569576720626,meV/Å,repo/coursework/new_datasets/alloy/mace_retrain_lr0p001_fair200_quick3h_20260509/eval_train.json,
+alloy_MoNbTaVW,MACE-lr1e-3-fair200,lr=0.001 fair200 default loss,valid,energy,27.52323390372057,86.40110798935581,meV/atom,repo/coursework/new_datasets/alloy/mace_retrain_lr0p001_fair200_quick3h_20260509/eval_valid.json,
+alloy_MoNbTaVW,MACE-lr1e-3-fair200,lr=0.001 fair200 default loss,valid,forces,62.0756620394977,113.74663038919498,meV/Å,repo/coursework/new_datasets/alloy/mace_retrain_lr0p001_fair200_quick3h_20260509/eval_valid.json,
+alloy_MoNbTaVW,MACE-EW10,energy_weight=10 forces_weight=100 normal,train,energy,10.822721475091795,36.42060934255313,meV/atom,repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew10_normal/eval_train.json,
+alloy_MoNbTaVW,MACE-EW10,energy_weight=10 forces_weight=100 normal,train,forces,56.768055361742654,82.40716263669628,meV/Å,repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew10_normal/eval_train.json,
+alloy_MoNbTaVW,MACE-EW10,energy_weight=10 forces_weight=100 normal,valid,energy,12.436830466139606,39.34197947634347,meV/atom,repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew10_normal/eval_valid.json,
+alloy_MoNbTaVW,MACE-EW10,energy_weight=10 forces_weight=100 normal,valid,forces,62.212968681644284,113.78785800366062,meV/Å,repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew10_normal/eval_valid.json,
+alloy_MoNbTaVW,MACE-EW50,energy_weight=50 forces_weight=100 normal,train,energy,10.915284235825695,27.497955746265678,meV/atom,repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew50_normal/eval_train.json,
+alloy_MoNbTaVW,MACE-EW50,energy_weight=50 forces_weight=100 normal,train,forces,57.60957883480557,84.24086871047587,meV/Å,repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew50_normal/eval_train.json,
+alloy_MoNbTaVW,MACE-EW50,energy_weight=50 forces_weight=100 normal,valid,energy,11.867850551503924,32.623201692084685,meV/atom,repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew50_normal/eval_valid.json,
+alloy_MoNbTaVW,MACE-EW50,energy_weight=50 forces_weight=100 normal,valid,forces,62.86696164088902,113.89976584924635,meV/Å,repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew50_normal/eval_valid.json,
+alloy_MoNbTaVW,MatterSim,fine-tuned reference,valid,energy,6.846,28.924,meV/atom,for_gpt/metrics/05_new_datasets_summary.md,manual expected copied from project summary
+alloy_MoNbTaVW,MatterSim,fine-tuned reference,valid,forces,54.749,116.898,meV/Å,for_gpt/metrics/05_new_datasets_summary.md,manual expected copied from project summary
+alloy_MoNbTaVW,MTP-20,from-scratch reference,valid,energy,12.938,39.637,meV/atom,for_gpt/metrics/05_new_datasets_summary.md,manual expected copied from project summary
+alloy_MoNbTaVW,MTP-20,from-scratch reference,valid,forces,94.46,146.763,meV/Å,for_gpt/metrics/05_new_datasets_summary.md,manual expected copied from project summary
