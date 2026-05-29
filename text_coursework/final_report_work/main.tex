@@ -1,0 +1,90 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\setmainlanguage{russian}
+\setotherlanguage{english}
+\setmainfont{cmunrm.otf}[
+  BoldFont=cmunbx.otf,
+  ItalicFont=cmunti.otf,
+  BoldItalicFont=cmunbi.otf
+]
+\newfontfamily\cyrillicfont{cmunrm.otf}[
+  BoldFont=cmunbx.otf,
+  ItalicFont=cmunti.otf,
+  BoldItalicFont=cmunbi.otf
+]
+\setmonofont{cmuntt.otf}
+\newfontfamily\cyrillicfonttt{cmuntt.otf}
+
+\geometry{left=30mm,right=15mm,top=20mm,bottom=20mm}
+\onehalfspacing
+\graphicspath{{figures/}}
+
+\hypersetup{
+  unicode=true,
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue,
+  pdftitle={Финальный отчет по курсовому проекту},
+  pdfauthor={TODO}
+}
+
+\begin{document}
+
+\begin{titlepage}
+  \begin{center}
+    Национальный исследовательский университет <<Высшая школа экономики>>\\
+    Факультет компьютерных наук\\[3cm]
+
+    {\Large Курсовая работа}\\[1cm]
+    {\LARGE\bfseries Тонкая настройка MLIP: MACE и MatterSim в сравнении с MTP}\\[0.8cm]
+    {\large Финальный исследовательский отчет}\\[3cm]
+  \end{center}
+
+  \begin{flushright}
+    Студент: TODO\\
+    Группа: TODO\\
+    Научный руководитель: TODO
+  \end{flushright}
+
+  \vfill
+
+  \begin{center}
+    Москва, 2026
+  \end{center}
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+\input{sections/00_abstract}
+\input{sections/01_introduction}
+\input{sections/02_problem_metrics}
+\input{sections/03_methods_literature}
+\input{sections/04_experiment_protocol}
+\input{sections/05_results_discussion}
+\input{sections/06_limitations}
+\input{sections/07_conclusion}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Список источников}
+\bibliographystyle{unsrt}
+\nocite{*}
+\bibliography{ref}
+
+\appendix
+\input{sections/appendix}
+
+\end{document}
