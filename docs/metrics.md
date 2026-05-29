@@ -1,7 +1,7 @@
 # Метрики и единицы
 
-- Energy errors: `meV/atom`.
-- Force errors: `meV/Å`.
-- Metric names: `MAE`, `RMSE`.
+- ошибки энергии измеряются в `meV/atom`;
+- ошибки сил измеряются в `meV/Å`;
+- основные метрики: `MAE` и `RMSE`.
 
-Clean repo не меняет единицы, split labels, алгоритмы агрегации или финальные numbers. Таблицы в `results/verified_metrics/` являются источником чисел для future report writing.
+Clean repo не меняет единицы измерения, labels разбиений, алгоритмы агрегации или финальные численные значения. Для написания отчета основным источником остается `text_coursework/RESULTS_SOURCE_OF_TRUTH.md`; внутри репозитория ему соответствуют system-specific verified CSV-файлы в `results/verified_metrics/`.
