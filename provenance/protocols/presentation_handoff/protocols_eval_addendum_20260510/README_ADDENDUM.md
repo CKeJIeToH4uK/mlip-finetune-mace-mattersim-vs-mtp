@@ -9,7 +9,7 @@ It adds completed MACE alloy protocol ablations from the normal partition:
 
 This archive should not replace the main bundle. It only adds protocol-ablation evidence for the presentation builder.
 
-The archive intentionally excludes checkpoints, model files, raw datasets, image artifacts, Python caches, and other heavy files. Do not use checkpoints or models from this addendum; only use the included JSON/CSV metrics, logs, scripts, and summaries.
+The archive intentionally excludes checkpoints, model files, raw datasets, image artifacts, Python cache files, and other heavy files. Do not use checkpoints or models from this addendum; only use the included JSON/CSV metrics, logs, scripts, and summaries.
 
 Recommended use:
 Keep `MACE-EW50` as the main MACE alloy row unless the report framing is changed explicitly. Use these protocol runs as backup ablations for the loss-weighting discussion.

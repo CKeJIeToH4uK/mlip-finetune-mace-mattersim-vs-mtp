@@ -1,7 +1,7 @@
-# Excluded Heavy Manifest Pointer
+# Указатель на манифест исключенных тяжелых артефактов
 
-Raw datasets, checkpoints, model weights, heavy archives, build outputs, local binaries, and cache/build artifacts excluded from the physical clean repo are tracked in:
+Исходные датасеты, чекпоинты, веса моделей, тяжелые архивы, результаты сборки, локальные бинарные файлы и служебные кэши, исключенные из физического очищенного репозитория, перечислены в:
 
 `provenance/source_manifests/excluded_heavy_manifest.csv`
 
-This Markdown file is only a human-facing pointer. The CSV manifest is canonical.
+Этот Markdown-файл служит только удобным указателем. Каноническим источником остается CSV-манифест.

@@ -1,7 +1,7 @@
-# Old Experiments Manifest Pointer
+# Указатель на манифест старых экспериментов
 
-Old contexts, education folders, non-copied archives, and external historical zones are tracked in:
+Старые контексты, учебные папки, нескопированные архивы и внешние исторические зоны перечислены в:
 
 `provenance/source_manifests/archive_external_manifest.csv`
 
-This Markdown file is only a human-facing pointer. The CSV manifest is canonical.
+Этот Markdown-файл служит только удобным указателем. Каноническим источником остается CSV-манифест.
