@@ -33,7 +33,7 @@ Expected outputs:
 - resources.txt
 - exact_command.txt
 - train.log
-- water_mtp20_clean_<jobid>.out
+- `water_mtp20_clean_<jobid>.out`
 - mtp20_trained.json
 - metrics_20_clean.json
 - metrics_20_clean.csv

@@ -1,6 +1,6 @@
 # NEW CHAT MISSING FILES REPORT 2026-05-11
 
-This report records the files requested for the new-chat handoff and whether they were found locally on 2026-05-10. Missing entries are factual; no missing content was invented.
+This report records the files requested for the new-chat handoff and whether they were found locally on 2026-05-10. Missing entries were not reconstructed from other materials.
 
 ## Source archives
 
@@ -20,7 +20,7 @@ All three requested theory PDFs were found and copied into `PRESENTATION/03_cont
 - found: `m3gnet.pdf`
 - found: `mace.ipynb.pdf`
 
-## Final metrics / results source-of-truth files
+## Final metric/result source files
 
 Found and copied into `PRESENTATION/03_content/results_handoff/`:
 

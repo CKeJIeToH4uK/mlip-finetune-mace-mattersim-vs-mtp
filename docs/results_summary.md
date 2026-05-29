@@ -15,7 +15,7 @@
 
 ## Вспомогательные таблицы
 
-Таблицы `final_metrics_long.csv` и `final_metrics_wide.csv` в `provenance/handoff_tables/` являются вспомогательными handoff-таблицами. Их можно использовать для сверки происхождения результатов, но они не должны переопределять verified CSV по отдельным системам и `RESULTS_SOURCE_OF_TRUTH.md`.
+`provenance/handoff_tables/final_metrics_long.csv` и `provenance/handoff_tables/final_metrics_wide.csv` являются вспомогательными handoff-таблицами. Их можно использовать для сверки происхождения результатов, но они не должны переопределять verified CSV по отдельным системам и `RESULTS_SOURCE_OF_TRUTH.md`.
 
 ## Sanity checks
 

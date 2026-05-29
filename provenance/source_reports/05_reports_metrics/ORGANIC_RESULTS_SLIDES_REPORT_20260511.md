@@ -4,7 +4,7 @@
 
 Verified organic cross-temperature metrics were found inside `PRESENTATION/00_inbox/presentation_full_context.zip`, normalized into the canonical 12-row CSV, and used for the MAE/RMSE result slides. The organic block now has four standalone preview pages: training dynamics, MTP ensemble sanity check, MAE setup/results, and RMSE takeaways.
 
-No raw datasets, checkpoints, model weights, training, evaluation, external sources, OCR-derived values, or invented numbers were used.
+The slide block uses only the listed source files. It does not use raw datasets, checkpoints, model weights, rerun training/evaluation outputs, external sources, OCR-derived values, or reconstructed metric values.
 
 ## 2. Candidate Source Files
 
@@ -115,7 +115,7 @@ Standalone preview:
 | learning curves are optimization/provenance evidence only | accepted numeric training logs plus explicit caveat on slide 24 |
 | MTP learning traces were not plotted | discovery report: MTP traces have unlabeled y-axis metric, and summary file has no curve |
 | MTP-16/MTP-20 have five repeated train/validation 300K runs | `ensemble_aggregates_verified_20260511.csv`, rows with `dataset=organic`, `split=valid_300K`, `n_runs=5` |
-| single-run MTP is close to the 300K validation ensemble mean by MAE | Energy MAE and Forces MAE differences between `organic_metrics_verified_20260511.csv` 300K single-run rows and `ensemble_aggregates_verified_20260511.csv` validation means are within one sample std for both MTP levels |
+| single-run MTP 300K validation MAE falls within one sample standard deviation of the ensemble mean | Energy MAE and Forces MAE differences between `organic_metrics_verified_20260511.csv` 300K single-run rows and `ensemble_aggregates_verified_20260511.csv` validation means are within one sample standard deviation for both MTP levels |
 
 All result claims are scoped to the organic cross-temperature block.
 
@@ -170,7 +170,7 @@ Displayed MAE comparison:
 
 Chosen slide wording:
 
-- `По MAE одиночный запуск MTP близок к среднему ансамбля на 300K validation.`
+- `Одиночный запуск MTP для 300K validation находится в пределах одного выборочного стандартного отклонения от среднего ансамбля по MAE.`
 - `Для 600K/1200K далее показана доступная оценка по одному запуску.`
 
 Reason:

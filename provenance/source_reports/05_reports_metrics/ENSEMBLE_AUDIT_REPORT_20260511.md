@@ -1,6 +1,6 @@
 # ENSEMBLE AUDIT REPORT 2026-05-11
 
-Scope was limited to the existing `PRESENTATION` materials requested by the task. No slides, TeX, `main.tex`, training, evaluation, raw datasets, checkpoints, model weights, or OCR-derived numbers were used.
+Scope was limited to the existing `PRESENTATION` materials requested by the task. Slides, TeX files, `main.tex`, training/evaluation runs, raw datasets, checkpoints, model weights, and OCR-derived values were not used as metric sources.
 
 ## 1. Directories and archives reviewed
 
@@ -156,23 +156,23 @@ Classification definitions used:
 
 | dataset | model/protocol | split/temp | status | slide action |
 | --- | --- | --- | --- | --- |
-| organic | MatterSim | test_300K/test_600K/test_1200K | single run: show line/bar only | SHOW single run; do not add std to cross-temperature plots |
-| organic | MACE | test_300K/test_600K/test_1200K | single run: show line/bar only | SHOW single run; do not add std to cross-temperature plots |
-| organic | MTP-16 | test_300K/test_600K/test_1200K | single run: show line/bar only | SHOW single run; do not add std to cross-temperature plots |
-| organic | MTP-20 | test_300K/test_600K/test_1200K | single run: show line/bar only | SHOW single run; do not add std to cross-temperature plots |
-| organic | MTP-16 | train_300K and valid_300K | ensemble: show mean ± std | SHOW mean ± std only in train/valid MTP baseline/backup table, not cross-temp test plot |
-| organic | MTP-20 | train_300K and valid_300K | ensemble: show mean ± std | SHOW mean ± std only in train/valid MTP baseline/backup table, not cross-temp test plot |
-| organic | MatterSim sweep | valid_300K | ablation/sweep: no std | DO NOT aggregate: hyperparameter sweep |
-| water_H2O | MatterSim | train/valid where available | single run: show line/bar only | SHOW single run; no mean ± std |
-| water_H2O | MACE | train/valid where available | single run: show line/bar only | SHOW single run; no mean ± std |
-| water_H2O | MTP-16 | train/valid where available | single run: show line/bar only | SHOW single run; no mean ± std |
-| water_H2O | MTP-20 | train/valid where available | single run: show line/bar only | SHOW single run; no mean ± std |
-| alloy_MoNbTaVW | MatterSim | train/valid where available | single run: show line/bar only | SHOW single run |
-| alloy_MoNbTaVW | MACE default | train/valid where available | ablation: show separate protocol row, no std | DO NOT aggregate: ablation/sweep |
-| alloy_MoNbTaVW | MACE-EW10 | train/valid where available | ablation: show separate protocol row, no std | DO NOT aggregate: ablation/sweep |
-| alloy_MoNbTaVW | MACE-EW50 | train/valid where available | ablation: show separate protocol row, no std | DO NOT aggregate: ablation/sweep |
-| alloy_MoNbTaVW | MACE LoRA/freeze/stage2 | train/valid where available | ablation: show separate protocol row, no std | DO NOT aggregate: ablation/sweep |
-| alloy_MoNbTaVW | MTP-20 | train/valid where available | single run: show line/bar only | SHOW single run; no mean ± std |
+| organic | MatterSim | test_300K/test_600K/test_1200K | single run: show line/bar only | Show a single run; do not add std to cross-temperature plots |
+| organic | MACE | test_300K/test_600K/test_1200K | single run: show line/bar only | Show a single run; do not add std to cross-temperature plots |
+| organic | MTP-16 | test_300K/test_600K/test_1200K | single run: show line/bar only | Show a single run; do not add std to cross-temperature plots |
+| organic | MTP-20 | test_300K/test_600K/test_1200K | single run: show line/bar only | Show a single run; do not add std to cross-temperature plots |
+| organic | MTP-16 | train_300K and valid_300K | ensemble: show mean ± std | Show mean ± std only in train/valid MTP baseline/backup table, not cross-temp test plot |
+| organic | MTP-20 | train_300K and valid_300K | ensemble: show mean ± std | Show mean ± std only in train/valid MTP baseline/backup table, not cross-temp test plot |
+| organic | MatterSim sweep | valid_300K | ablation/sweep: no std | Do not aggregate; hyperparameter sweep |
+| water_H2O | MatterSim | train/valid where available | single run: show line/bar only | Show a single run; no mean ± std |
+| water_H2O | MACE | train/valid where available | single run: show line/bar only | Show a single run; no mean ± std |
+| water_H2O | MTP-16 | train/valid where available | single run: show line/bar only | Show a single run; no mean ± std |
+| water_H2O | MTP-20 | train/valid where available | single run: show line/bar only | Show a single run; no mean ± std |
+| alloy_MoNbTaVW | MatterSim | train/valid where available | single run: show line/bar only | Show a single run |
+| alloy_MoNbTaVW | MACE default | train/valid where available | ablation: show separate protocol row, no std | Do not aggregate; ablation/sweep |
+| alloy_MoNbTaVW | MACE-EW10 | train/valid where available | ablation: show separate protocol row, no std | Do not aggregate; ablation/sweep |
+| alloy_MoNbTaVW | MACE-EW50 | train/valid where available | ablation: show separate protocol row, no std | Do not aggregate; ablation/sweep |
+| alloy_MoNbTaVW | MACE LoRA/freeze/stage2 | train/valid where available | ablation: show separate protocol row, no std | Do not aggregate; ablation/sweep |
+| alloy_MoNbTaVW | MTP-20 | train/valid where available | single run: show line/bar only | Show a single run; no mean ± std |
 
 Current slides to revise:
 

@@ -62,7 +62,7 @@ python collect_protocols_normal.py
 cat protocols_normal_summary.md
 
 Expected outputs:
-- run_status_<jobid>.tsv
+- `run_status_<jobid>.tsv`
 - stage2_normal/eval_train.json
 - stage2_normal/eval_valid.json
 - stage2_normal/eval_metrics.csv
@@ -84,7 +84,7 @@ Compare to fair200 baseline:
 
 A useful run:
 - lowers energy RMSE substantially
-- does not make force RMSE much worse
+- reports force RMSE against the fair200 baseline value of 113.747 meV/Å
 
 If stage2/LoRA/freeze do not beat EW10/EW50:
 - keep them as negative/backup ablations

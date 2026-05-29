@@ -2,7 +2,7 @@
 
 Purpose:
 - clean retrain of MACE fine-tune on MoNbTaVW/alloy
-- old run had suspiciously weak energy metrics
+- old run had weak energy metrics relative to the comparison context
 - main change: lr 0.01 -> 0.001
 - old results are not overwritten
 
@@ -29,8 +29,8 @@ Expected outputs:
 - resources.txt
 - eval_valid.json
 - eval_train.json
-- alloy_mace_lr0p001_<jobid>.out
-- alloy_mace_lr0p001_eval_<jobid>.out
+- `alloy_mace_lr0p001_<jobid>.out`
+- `alloy_mace_lr0p001_eval_<jobid>.out`
 - logs/
 - results/
 - checkpoints/
@@ -43,5 +43,5 @@ Old baseline:
 - valid RMSE_F = 123.247 meV/A
 
 Acceptance criterion:
-- new valid MAE_E should be clearly below 34.744 meV/atom
-- force MAE should not become much worse than 70.603 meV/A
+- new valid MAE_E should be below 34.744 meV/atom
+- force MAE should be compared explicitly against 70.603 meV/A

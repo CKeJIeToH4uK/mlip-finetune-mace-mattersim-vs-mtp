@@ -44,8 +44,8 @@ Expected outputs:
 - resources.txt
 - exact_command.txt
 - train.log
-- alloy_mace_fair200_<jobid>.out
-- alloy_mace_fair_eval_<jobid>.out
+- `alloy_mace_fair200_<jobid>.out`
+- `alloy_mace_fair_eval_<jobid>.out`
 - eval_valid.json
 - eval_train.json
 - eval_metrics_fair200_quick3h.csv
@@ -61,8 +61,8 @@ Old baseline valid metrics:
 - old MACE lr=0.01 Forces RMSE = 123.247 meV/Å
 
 Acceptance criterion:
-- new valid Energy MAE should be clearly below 34.744 meV/atom
-- force MAE should not become much worse than 70.603 meV/Å
+- new valid Energy MAE should be below 34.744 meV/atom
+- force MAE should be compared explicitly against 70.603 meV/Å
 
 Safe checks before sbatch:
 bash -n train_alloy_mace_lr0p001_fair200_quick3h.sbatch

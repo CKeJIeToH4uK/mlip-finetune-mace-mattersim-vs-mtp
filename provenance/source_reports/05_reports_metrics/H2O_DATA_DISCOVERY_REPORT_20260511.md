@@ -10,7 +10,7 @@
 - `PRESENTATION/00_inbox/protocols_eval_addendum_20260510.zip` (searched by inventory; no accepted H2O metric rows needed from it)
 - staging extraction: `PRESENTATION/01_unpacked/h2o_discovery_20260511/`
 
-No raw datasets, checkpoints, or model weights were copied into deck/assets.
+Only source/metric materials needed for the deck were copied. Raw datasets, checkpoints, and model weights were not copied into deck/assets.
 
 ## 2. Candidate files found
 
@@ -62,7 +62,7 @@ All values below are validation split metrics in requested presentation units.
 
 ## 6. Old water figure warning
 
-The old `water_mae.png` and `water_rmse.png` figures in `presentation_full_context.zip` were not reused as source-of-truth. Their notebook provenance uses the old water MTP row labeled as level 16 and does not include the newer separate MTP-20 row from the final bundle. They are therefore only discovery clues, not final slide inputs.
+The old `water_mae.png` and `water_rmse.png` figures in `presentation_full_context.zip` were not used as final metric sources. Their notebook provenance uses the old water MTP row labeled as level 16 and does not include the newer separate MTP-20 row from the final bundle. These figures are therefore suitable only for source discovery, not for final values or slide inputs.
 
 ## 7. Conflict table
 

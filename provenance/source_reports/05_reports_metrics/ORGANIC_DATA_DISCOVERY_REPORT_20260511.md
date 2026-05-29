@@ -15,7 +15,7 @@ Archives inspected from `PRESENTATION/00_inbox/`:
 - `final_training_bundle_20260510.zip`
 - `protocols_eval_addendum_20260510.zip`
 
-No raw datasets, checkpoints, model weights, training, or evaluation runs were used.
+The search used only the listed presentation materials. It did not use raw datasets, checkpoints, model weights, training, or evaluation runs.
 
 ## 2. Candidate Files
 

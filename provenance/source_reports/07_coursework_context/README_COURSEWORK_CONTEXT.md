@@ -18,6 +18,6 @@ Sanitized lightweight context collected for pipeline/Q&A from `repo/coursework` 
 - Did not copy raw logs wholesale; generated short markdown snippets in `log_snippets/`.
 - Replaced local home-directory prefixes with `<USER_HOME>` in copied/generated text where parsed.
 - Replaced obvious SLURM account directives with `<SLURM_ACCOUNT>`.
-- Directory tree uses relative paths only, depth <= 4, excluding raw/heavy/cache paths.
+- Directory tree uses relative paths only, depth no more than 4, excluding raw/heavy/cache paths.
 
 See `COURSEWORK_CONTEXT_MANIFEST_20260511.md` and `COURSEWORK_CONTEXT_EXCLUDED_FILES_20260511.md` for audit details.

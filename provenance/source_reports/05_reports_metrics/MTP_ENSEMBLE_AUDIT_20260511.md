@@ -2,7 +2,7 @@
 
 ## 1. Scope
 
-Audit only. No slides, plots, training, evaluation, raw datasets, checkpoints, or model weights were changed.
+This audit documents available ensemble evidence only. It does not change slides, plots, training/evaluation outputs, raw datasets, checkpoints, or model weights.
 
 Searched:
 
@@ -163,6 +163,6 @@ Also not found in `repo/coursework/mtp_runs/`:
 
 ## 8. Audit Decision
 
-The supervisor requirement "ensemble of 5 MTP potentials at levels 16 and 20" is partially represented in the available materials: five repeated MTP training/validation jobs exist per level for organic 300K. However, the organic cross-temperature result block currently has only one tested potential per level at 300K/600K/1200K.
+The requirement for an ensemble of 5 MTP potentials at levels 16 and 20 is only partially represented in the available materials. Five repeated MTP training/validation jobs exist per level for organic 300K, but the organic cross-temperature result block has only one tested potential per level at 300K/600K/1200K.
 
-Therefore, the existing organic result slides should remain single-run MTP lines unless new verified cross-temperature evaluations for the other four runs per level are added.
+For this reason, the existing organic result slides should remain single-run MTP lines unless new verified cross-temperature evaluations for the other four runs per level are added.

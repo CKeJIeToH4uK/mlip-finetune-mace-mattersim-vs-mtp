@@ -9,7 +9,7 @@ Background:
   RMSE_E = 29 meV/atom
   RMSE_F = 115 meV/Å
   before preemption.
-- Therefore EW10/EW50 are the most important MACE ablations.
+- Therefore EW10/EW50 are the priority MACE ablations in this protocol group.
 
 Runs:
 1. full_ew10_normal:
@@ -60,4 +60,4 @@ F RMSE = 113.747 meV/Å
 
 A useful result:
 - substantially lower energy RMSE
-- forces not much worse
+- Forces RMSE reported against the fair200 baseline value of 113.747 meV/Å

@@ -151,8 +151,8 @@ No conflict with the handoff values; differences are rounding only.
 
 `INCLUDE MTP-16`
 
-Verified MoNbTaVW MTP-16 validation metrics were found; actual level is verified as 16 from metrics and model basis/parameter evidence; units are clear and converted.
+MoNbTaVW MTP-16 validation metrics were found. The actual level is supported as 16 by `metrics.json`, model basis length, and parameter count evidence. Units are explicit and converted to the report units.
 
 Recommendation: Add MTP-16 to MoNbTaVW main comparison alongside MatterSim, MACE-EW50, MTP-20.
 
-Important caveat for notes/source tracking: the MTP-16 log contains a conflicting line `MTP level 20: 897 parameters, 5 species`; report it as a log print mismatch, not as actual level 20.
+Source-tracking caveat: the MTP-16 log contains a conflicting line, `MTP level 20: 897 parameters, 5 species`. Treat this as a log print mismatch, not as evidence for actual level 20.
