@@ -6,4 +6,4 @@
 - `make_tables.py`: creates small Markdown previews for verified CSV tables.
 - `make_figures.py`: lists selected report figure assets.
 
-Source training/evaluation scripts are mirrored under `src/mlip_benchmark/source_mirror/`.
+Historical source training/evaluation scripts are mirrored under `provenance/source_mirror/` and are provenance-only.

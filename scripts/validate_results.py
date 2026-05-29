@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import csv
 import re
 import sys
 
@@ -9,26 +8,44 @@ REQUIRED = [
     'results/verified_metrics/organic_metrics_verified_20260511.csv',
     'results/verified_metrics/h2o_metrics_verified_20260511.csv',
     'results/verified_metrics/monbtavw_metrics_verified_20260511.csv',
-    'results/verified_metrics/final_metrics_long.csv',
-    'results/verified_metrics/final_metrics_wide.csv',
+    'results/verified_metrics/monbtavw_metrics_verified_20260511_annotated.csv',
+    'provenance/handoff_tables/final_metrics_long.csv',
+    'provenance/handoff_tables/final_metrics_wide.csv',
     'results/sanity_checks/ensemble_aggregates_verified_20260511.csv',
 ]
 
+
 def read_text(path):
     return path.read_text(encoding='utf-8', errors='ignore')
+
 
 def main():
     errors = []
     for rel in REQUIRED:
         if not (ROOT / rel).exists():
-            errors.append(f'missing required metric table: {rel}')
+            errors.append(f'missing required metric/support table: {rel}')
 
-    for rel in ['results/verified_metrics/h2o_metrics_verified_20260511.csv', 'results/verified_metrics/monbtavw_metrics_verified_20260511.csv']:
+    forbidden_verified = [
+        'results/verified_metrics/final_metrics_long.csv',
+        'results/verified_metrics/final_metrics_wide.csv',
+    ]
+    for rel in forbidden_verified:
+        if (ROOT / rel).exists():
+            errors.append(f'handoff table must not be under verified_metrics: {rel}')
+
+    for rel in ['results/verified_metrics/h2o_metrics_verified_20260511.csv', 'results/verified_metrics/monbtavw_metrics_verified_20260511.csv', 'results/verified_metrics/monbtavw_metrics_verified_20260511_annotated.csv']:
         path = ROOT / rel
         if path.exists():
             text = read_text(path)
             if re.search(r'(^|[,;\s])test([,;\s]|$)', text, re.IGNORECASE):
                 errors.append(f'validation table uses reserved split wording: {rel}')
+
+    annotated = ROOT / 'results/verified_metrics/monbtavw_metrics_verified_20260511_annotated.csv'
+    if annotated.exists():
+        text = read_text(annotated)
+        for status in ['final_main', 'appendix_candidate']:
+            if status not in text:
+                errors.append(f'annotated MoNbTaVW table missing status: {status}')
 
     summary = ROOT / 'docs' / 'results_summary.md'
     if summary.exists():
@@ -45,6 +62,8 @@ def main():
         for term in guarded:
             if term in text:
                 errors.append(f'guarded phrase appears in results summary: {term}')
+        if 'provenance/handoff_tables/final_metrics_long.csv' not in text:
+            errors.append('results summary does not document handoff table location')
 
     if errors:
         for e in errors:
@@ -52,6 +71,7 @@ def main():
         return 1
     print('validate_results: OK')
     return 0
+
 
 if __name__ == '__main__':
     sys.exit(main())

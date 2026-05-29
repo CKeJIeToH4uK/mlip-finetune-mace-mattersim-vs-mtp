@@ -30,3 +30,9 @@ python scripts/validate_results.py
 ```
 
 Ожидаемый уровень воспроизводимости: проверка согласованности curated artifacts и provenance. Полный training pipeline требует внешних heavy/raw assets, которые не входят в этот repo.
+
+## Manifest Self-Reference Policy
+
+`included_manifest.csv`, `excluded_heavy_manifest.csv`, and `archive_external_manifest.csv` are control files. They may be absent from `included_manifest.csv` to avoid circular manifest semantics. `checksums.sha256` intentionally excludes itself; it covers copied/generated artifacts and manifest CSVs.
+
+Historical absolute paths are allowed only in `provenance/`, manifests, logs, and raw eval refs as source history. Runnable/root docs and curated helper modules should not depend on local absolute paths.

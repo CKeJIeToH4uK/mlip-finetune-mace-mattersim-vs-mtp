@@ -68,15 +68,21 @@ def main():
         if p.suffix == '.ipynb' and not r.get('notebook_role'):
             errors.append(f'notebook missing notebook_role: {r["clean_path"]}')
 
-    literal_path = '/Users/' + 'bulat/'
+    local_path_patterns = [
+        '/' + 'Users' + '/' + 'bulat',
+        '/' + 'Users' + '/',
+        '/' + 'home' + '/' + 'brmannanov',
+    ]
     scan_roots = [ROOT/'README.md', ROOT/'PROJECT_STRUCTURE.md', ROOT/'REPRODUCIBILITY.md', ROOT/'docs', ROOT/'src', ROOT/'scripts']
     for base in scan_roots:
         paths = [base] if base.is_file() else list(base.rglob('*')) if base.exists() else []
         for p in paths:
             if p.is_file() and p.suffix.lower() in {'.md', '.py', '.sh', '.txt', '.sbatch'}:
                 text = p.read_text(encoding='utf-8', errors='ignore')
-                if literal_path in text:
-                    errors.append(f'hardcoded local path in runnable/docs: {p.relative_to(ROOT)}')
+                for pattern in local_path_patterns:
+                    if pattern in text:
+                        errors.append(f'hardcoded local path in runnable/docs: {p.relative_to(ROOT)}')
+                        break
 
     if not rows(EXCLUDED):
         errors.append('excluded_heavy_manifest is empty')

@@ -1,13 +1,21 @@
 # Results Summary
 
-Этот документ кратко фиксирует, где лежат финальные результаты. Числа берутся из `results/verified_metrics/` and supporting CSV files; текст отчета должен ссылаться на эти таблицы, а не на старые handoff materials.
+This document maps where curated result materials live. It does not replace `external build-context `text_coursework/RESULTS_SOURCE_OF_TRUTH.md``.
 
-## Main Result Tables
+## Numeric Authority
 
-- `results/verified_metrics/organic_metrics_verified_20260511.csv`: organic-датасет, cross-temperature rows.
-- `results/verified_metrics/h2o_metrics_verified_20260511.csv`: H2O held-out validation rows and separated train support rows where present.
-- `results/verified_metrics/monbtavw_metrics_verified_20260511.csv`: MoNbTaVW held-out validation rows, with MTP audit caveat handled separately.
-- `results/verified_metrics/final_metrics_long.csv` and `results/verified_metrics/final_metrics_wide.csv`: consolidated final tables.
+Final numeric authority for report writing is:
+
+1. `external build-context `text_coursework/RESULTS_SOURCE_OF_TRUTH.md``;
+2. system-specific verified CSV files in this clean repo:
+   - `results/verified_metrics/organic_metrics_verified_20260511.csv`;
+   - `results/verified_metrics/h2o_metrics_verified_20260511.csv`;
+   - `results/verified_metrics/monbtavw_metrics_verified_20260511.csv`;
+   - `results/verified_metrics/monbtavw_metrics_verified_20260511_annotated.csv` for row-level `metric_status` only.
+
+## Handoff/Support Tables
+
+`provenance/handoff_tables/final_metrics_long.csv` and `provenance/handoff_tables/final_metrics_wide.csv` are copied handoff/support tables from the final context. They are useful for provenance and cross-checking, but they are not complete final source-of-truth tables and should not override the system-specific verified CSV files.
 
 ## Sanity Checks
 
