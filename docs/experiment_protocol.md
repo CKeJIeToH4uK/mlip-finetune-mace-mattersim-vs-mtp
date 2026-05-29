@@ -1,10 +1,10 @@
 # Протокол экспериментов
 
-Clean repo хранит не полный training environment, а curated protocol: scripts, slurm files, selected logs, verified metrics and small eval snapshots. Для каждой финальной строки сохраняется путь от summary/report table к verified CSV and raw eval snapshot where available.
+Репозиторий фиксирует протокол проверки результатов: скрипты, отобранные логи, verified metrics и небольшие файлы оценки. Для каждой финальной строки сохраняется цепочка от итоговой таблицы к verified CSV и, где возможно, к исходному файлу оценки.
 
-Главная политика:
+Основные правила:
 
-- финальные числа не пересчитываются в процессе сборки clean repo;
-- verified CSV copied byte-for-byte where possible;
-- old contexts используются только для provenance/history;
-- train rows не смешиваются с held-out validation rows.
+- финальные числа не пересчитываются при сборке clean repo;
+- verified CSV по возможности копируются без изменения содержимого;
+- старые контексты используются только для восстановления provenance и истории работы;
+- train-строки не смешиваются с основными held-out validation результатами.
