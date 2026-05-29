@@ -1,3 +1,3 @@
 # Configs
 
-Small YAML files point to curated metric tables and raw eval refs. They are review metadata, not full training configs.
+Небольшие YAML-файлы указывают на проверенные таблицы метрик и файлы исходной оценки. Это метаданные для просмотра и проверки результатов, а не полные training configs.

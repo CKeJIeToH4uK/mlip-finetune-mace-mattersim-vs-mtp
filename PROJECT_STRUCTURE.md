@@ -17,7 +17,7 @@
 - `results/figures/` и `report_assets/figures/` — отобранные графики для просмотра и будущего отчета.
 - `provenance/handoff_tables/` — вспомогательные handoff-таблицы; они не являются полным источником финальных результатов.
 - `provenance/source_mirror/` — историческое зеркало исходных скриптов, сохраненное только для сверки происхождения результатов.
-- `provenance/` — сводки, фрагменты логов, slurm scripts, raw eval refs, manifests и checksums.
+- `provenance/` — сводки, фрагменты логов, slurm-скрипты, небольшие файлы исходной оценки, manifest-файлы и контрольные суммы.
 - `src/mlip_benchmark/` — легкие вспомогательные модули в `analysis/`, `evaluation`, `plotting` и `utils`.
 - `scripts/` — проверки clean repo и вспомогательные скрипты.
 - `presentation_archive/` — финальная презентация и выбранные preview/backup материалы.

@@ -73,4 +73,4 @@ The generated learning figures plot training-log validation Energy MAE and Force
 - Do not aggregate ablations as an ensemble; each row is a separate completed protocol.
 - Do not show mean +/- std; these are single completed runs, not confirmed repeated runs.
 - MTP-16 audit note: `metrics.json`, model basis length, and parameter count support actual level 16; the conflicting log line remains report-only.
-- MACE-EW50 outperforms MTP-20 on all four listed validation metrics, while MatterSim remains best on Energy MAE/RMSE in the verified table.
+- In this verified table, MACE-EW50 has lower errors than MTP-20 on all four listed validation metrics; MatterSim remains best on Energy MAE/RMSE.

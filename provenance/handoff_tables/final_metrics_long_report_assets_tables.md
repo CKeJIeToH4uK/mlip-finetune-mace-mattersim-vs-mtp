@@ -1,3 +1,5 @@
+Preview only. The canonical auxiliary table is `provenance/handoff_tables/final_metrics_long.csv`; it must not override `RESULTS_SOURCE_OF_TRUTH.md` or the verified per-system CSV files.
+
 | dataset | model_label | protocol | split | metric | mae | rmse | units | source_file | notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | water_H2O | MTP-16 | old mislabeled mtp20 folder, actual level=16 | valid | energy | 3.901132 | 5.859228 | meV/atom | repo/coursework/new_datasets/water/mtp/metrics.json | actual metrics.json level=16 |

@@ -1,3 +1,5 @@
+Preview only. The canonical auxiliary table is `provenance/handoff_tables/final_metrics_wide.csv`; it must not override `RESULTS_SOURCE_OF_TRUTH.md` or the verified per-system CSV files.
+
 | dataset | model_label | protocol | split | energy_mae_meV_atom | energy_rmse_meV_atom | forces_mae_meV_A | forces_rmse_meV_A | source_file | notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | alloy_MoNbTaVW | MACE-EW10 | energy_weight=10 forces_weight=100 normal | train | 10.822721475091795 | 36.42060934255313 | 56.768055361742654 | 82.40716263669628 | repo/coursework/new_datasets/alloy/mace_ablation_normal_ew10_ew50_20260509/full_ew10_normal/eval_train.json |  |

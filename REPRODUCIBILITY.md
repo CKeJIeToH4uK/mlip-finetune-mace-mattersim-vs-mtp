@@ -33,6 +33,6 @@ python scripts/validate_results.py
 
 ## Политика manifest-файлов
 
-`included_manifest.csv`, `excluded_heavy_manifest.csv` и `archive_external_manifest.csv` являются управляющими файлами. Они могут отсутствовать в `included_manifest.csv`, чтобы не создавать циклические записи. `checksums.sha256` намеренно исключает сам себя; он покрывает скопированные и сгенерированные материалы, а также manifest CSVs.
+`included_manifest.csv`, `excluded_heavy_manifest.csv` и `archive_external_manifest.csv` являются управляющими файлами. Они могут отсутствовать в `included_manifest.csv`, чтобы не создавать циклические записи. `checksums.sha256` намеренно исключает сам себя; он покрывает скопированные и сгенерированные материалы, а также manifest-файлы.
 
-Исторические absolute paths допустимы только в `provenance/`, manifests, logs и raw eval refs как часть истории источников. Root docs и curated helper modules не должны зависеть от локальных absolute paths.
+Исторические абсолютные пути допустимы только в `provenance/`, manifest-файлах, логах и небольших файлах исходной оценки как часть истории источников. Root docs и curated helper modules не должны зависеть от локальных абсолютных путей.

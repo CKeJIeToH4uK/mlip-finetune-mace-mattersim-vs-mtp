@@ -1,3 +1,5 @@
+Preview only. The canonical full table is `results/verified_metrics/organic_metrics_verified_20260511.csv`.
+
 | dataset | model_label | test_temperature | split | energy_mae_meV_atom | energy_rmse_meV_atom | forces_mae_meV_A | forces_rmse_meV_A | source_file | notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | organic | MatterSim | 300K | test_300K | 0.668864347 | 0.842537021 | 32.542574670 | 45.489514842 | PRESENTATION/00_inbox/presentation_full_context.zip::repo/coursework/cross_temp_eval/results/mattersim/test_300K.json | preferred repo_cross_temp_preferred rows; checked against source JSON; dated snapshot duplicates match |

@@ -58,6 +58,6 @@ E RMSE = 86.401 meV/atom
 F MAE = 62.076 meV/Å
 F RMSE = 113.747 meV/Å
 
-A useful result:
-- substantially lower energy RMSE
-- Forces RMSE reported against the fair200 baseline value of 113.747 meV/Å
+Evaluation criterion:
+- Energy RMSE should be lower than the fair200 baseline value of 86.401 meV/atom.
+- Forces RMSE should be reported against the fair200 baseline value of 113.747 meV/Å.

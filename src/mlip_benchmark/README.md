@@ -1,7 +1,7 @@
 # mlip_benchmark
 
-This package contains lightweight curated helpers for reviewing the clean repository.
+Эта папка содержит легкие вспомогательные модули для просмотра и проверки clean repo.
 
-Historical coursework scripts were moved to `provenance/source_mirror/` and are provenance-only. They are not part of this runnable helper package.
+Исторические скрипты курсового проекта вынесены в `provenance/source_mirror/` и используются только для сверки происхождения результатов. Они не входят в основной runnable helper package.
 
-Canonical helper modules here do not retrain models; they index tables, figures and split policy for review/report preparation.
+Модули в этой папке не переобучают модели. Они индексируют таблицы, графики и правила работы с разбиениями данных для проверки репозитория и подготовки отчета.

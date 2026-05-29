@@ -82,9 +82,9 @@ Compare to fair200 baseline:
 - F MAE 62.076
 - F RMSE 113.747
 
-A useful run:
-- lowers energy RMSE substantially
-- reports force RMSE against the fair200 baseline value of 113.747 meV/Å
+Evaluation criterion:
+- Energy RMSE should be lower than the fair200 baseline value of 86.401 meV/atom.
+- Forces RMSE should be reported against the fair200 baseline value of 113.747 meV/Å.
 
 If stage2/LoRA/freeze do not beat EW10/EW50:
 - keep them as negative/backup ablations

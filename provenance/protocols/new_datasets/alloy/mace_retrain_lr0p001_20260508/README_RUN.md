@@ -2,7 +2,7 @@
 
 Purpose:
 - clean retrain of MACE fine-tune on MoNbTaVW/alloy
-- old run had weak energy metrics relative to the comparison context
+- old run had higher energy errors than expected from the comparison context
 - main change: lr 0.01 -> 0.001
 - old results are not overwritten
 
@@ -39,9 +39,9 @@ Expected outputs:
 Old baseline:
 - valid MAE_E = 34.744 meV/atom
 - valid RMSE_E = 64.448 meV/atom
-- valid MAE_F = 70.603 meV/A
-- valid RMSE_F = 123.247 meV/A
+- valid MAE_F = 70.603 meV/Å
+- valid RMSE_F = 123.247 meV/Å
 
 Acceptance criterion:
 - new valid MAE_E should be below 34.744 meV/atom
-- force MAE should be compared explicitly against 70.603 meV/A
+- force MAE should be compared explicitly against 70.603 meV/Å

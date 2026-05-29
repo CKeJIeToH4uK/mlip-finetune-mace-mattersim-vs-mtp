@@ -9,7 +9,7 @@ This is a separate run folder. It must not overwrite:
 
 Why:
 The normal retrain is pending in normal partition.
-Old MACE alloy metrics were weak in energy relative to the comparison context.
+Old MACE alloy metrics had substantially higher energy errors than the target comparison rows.
 The main hypothesis is that old lr=0.01 was too high.
 This quick run tests lr=0.001 with a 3-hour partition limit.
 
