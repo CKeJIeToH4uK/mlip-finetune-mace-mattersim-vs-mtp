@@ -1,5 +1,5 @@
 # Модели
 
-Сохраняемые технические имена: MTP, MACE, MatterSim, MAE, RMSE. Для MoNbTaVW базовая MACE configuration and energy-weighted MACE configuration отражаются раздельно.
+В документации сохраняются технические имена: MTP, MACE, MatterSim, MAE и RMSE. Для MoNbTaVW базовый MACE и energy-weighted протокол MACE-EW50 фиксируются как разные строки результатов.
 
-Model weights and checkpoints are not included physically. Their source paths are documented in manifests.
+Файлы весов моделей и checkpoints физически не включены в репозиторий; ссылки на их исходные расположения зафиксированы в manifests.
