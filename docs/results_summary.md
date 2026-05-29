@@ -1,26 +1,26 @@
-# Results Summary
+# Сводка результатов
 
-This document maps where curated result materials live. It does not replace `external build-context `text_coursework/RESULTS_SOURCE_OF_TRUTH.md``.
+Этот документ показывает, где в clean repo находятся материалы с результатами. Он не заменяет внешний рабочий документ `text_coursework/RESULTS_SOURCE_OF_TRUTH.md`, который остается основным источником финальных чисел и допустимых claims.
 
-## Numeric Authority
+## Источник финальных чисел
 
-Final numeric authority for report writing is:
+Для текста отчета использовать:
 
-1. `external build-context `text_coursework/RESULTS_SOURCE_OF_TRUTH.md``;
-2. system-specific verified CSV files in this clean repo:
+1. внешний документ `text_coursework/RESULTS_SOURCE_OF_TRUTH.md`;
+2. system-specific verified CSV-файлы из этого репозитория:
    - `results/verified_metrics/organic_metrics_verified_20260511.csv`;
    - `results/verified_metrics/h2o_metrics_verified_20260511.csv`;
    - `results/verified_metrics/monbtavw_metrics_verified_20260511.csv`;
-   - `results/verified_metrics/monbtavw_metrics_verified_20260511_annotated.csv` for row-level `metric_status` only.
+   - `results/verified_metrics/monbtavw_metrics_verified_20260511_annotated.csv` — только для row-level `metric_status`.
 
 ## Handoff/Support Tables
 
-`provenance/handoff_tables/final_metrics_long.csv` and `provenance/handoff_tables/final_metrics_wide.csv` are copied handoff/support tables from the final context. They are useful for provenance and cross-checking, but they are not complete final source-of-truth tables and should not override the system-specific verified CSV files.
+Таблицы `final_metrics_long.csv` и `final_metrics_wide.csv` в `provenance/handoff_tables/` являются вспомогательными handoff-таблицами. Их можно использовать для сверки provenance, но они не должны переопределять system-specific verified CSV и `RESULTS_SOURCE_OF_TRUTH.md`.
 
 ## Sanity Checks
 
-- `results/sanity_checks/ensemble_aggregates_verified_20260511.csv`: MTP ensemble sanity check for organic 300K only.
+- `results/sanity_checks/ensemble_aggregates_verified_20260511.csv`: MTP ensemble sanity check только для organic 300K.
 
 ## Claim Discipline
 
-Allowed claims are metric-specific and table-backed. Broad model-family generalizations, performance-cost claims, and long-trajectory stability claims are outside the clean repo source-of-truth.
+Выводы в отчете должны формулироваться по конкретной системе, разбиению и метрике. Обобщения вида «универсальные модели всегда лучше», утверждения о вычислительной стоимости и выводы о долгой MD-стабильности не подтверждаются текущими verified таблицами.
