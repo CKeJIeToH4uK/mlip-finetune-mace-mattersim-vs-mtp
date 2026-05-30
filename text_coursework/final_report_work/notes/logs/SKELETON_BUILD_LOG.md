@@ -193,3 +193,10 @@
 - Проверены ссылки и labels: 8 used / 8 defined citation keys, missing/unused нет, duplicate labels нет.
 - Нефатальные предупреждения после сборки: `Underfull \hbox` на титульном листе и в библиографии; ранее известный `Overfull \hbox (29.42638pt too wide)` в `sections/04_experiment_protocol.tex`.
 - Проведены две независимые read-only агентские проверки по 3 прохода каждая. Проверки подтвердили структуру раздела, целевой объем, корректность citations/labels, отсутствие `---`, `\texttt`, `\textbf` и literal `checkpoint` в разделе 3. Единственное замечание: фраза `контрольным точкам модели` является русской заменой `checkpoint`; оставлена как терминологически согласованная с задачей.
+
+## Section 3 style cleanup 2026-05-30
+
+- В MatterSim-подразделе заменено слово `backbone` на русскую формулировку `архитектурную основу`.
+- В `sections/03_methods_literature.tex` убраны жирные математические обозначения `\mathbf{...}`; заголовки не менялись.
+- Выполнена сборка командой `python3 scripts/compile_latex.py ... --compiler texlive --engine xelatex`; сборка завершилась с кодом `0`, `main.pdf` обновлен.
+- Проверка `rg` подтвердила отсутствие `backbone`, `\mathbf`, `\boldsymbol`, `\bm`, `\textbf` и `\texttt` в разделе 3. Citations/labels без изменений: missing/unused citation keys нет, duplicate labels нет.
