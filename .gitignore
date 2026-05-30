@@ -10,6 +10,10 @@ local_edit_logs/
 *.snm
 *.fls
 *.fdb_latexmk
+text_coursework/final_report_work/*.bbl
+text_coursework/final_report_work/*.blg
+text_coursework/final_report_work/*.synctex.gz
+text_coursework/final_report_work/*.xdv
 *.pth
 *.pt
 *.ckpt

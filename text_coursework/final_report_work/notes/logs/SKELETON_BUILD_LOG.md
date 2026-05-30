@@ -85,3 +85,30 @@
 - Предупреждение `Empty thebibliography` остается ожидаемым до добавления явных `\cite{...}` в текст.
 - Build-артефакты в `text_coursework/final_report_work/` не добавлялись.
 - Commit не выполнялся.
+
+## Title page update 2026-05-30
+
+- В `main.tex` заменен только блок `\begin{titlepage} ... \end{titlepage}` на титульный лист по образцу КТ1.
+- В преамбулу `main.tex` добавлен только пакет `tabularx`, необходимый для титульного листа.
+- Старые разделы, аннотация, введение, рисунки и библиография из КТ1 не переносились.
+- Выполнена сборка из `text_coursework/final_report_work/` командой `latexmk -xelatex main.tex`.
+- Сборка завершилась с кодом `0`; PDF создан.
+- Нефатальные предупреждения: `Empty thebibliography` ожидаемо до добавления явных `\cite{...}`; `Underfull \hbox` относится к верстке титульного листа.
+- Commit не выполнялся.
+
+## Build config update 2026-05-30
+
+- В корневой `.gitignore` добавлены недостающие LaTeX build-артефакты для `text_coursework/final_report_work/`: `.bbl`, `.blg`, `.pdf`, `.synctex.gz`, `.xdv`.
+- Добавлен `text_coursework/final_report_work/.latexmkrc`, чтобы обычный запуск `latexmk main.tex` использовал XeLaTeX.
+- В `.latexmkrc` выставлен режим BibTeX cleanup, при котором `latexmk -C main.tex` удаляет сгенерированный `main.bbl`.
+- Причина предыдущей ошибки сборки: запуск `latexmk main.tex` без `.latexmkrc` выбирал стандартный `latex`/pdfTeX flow, а текущий `main.tex` использует `fontspec`, которому нужен XeLaTeX или LuaLaTeX.
+- Выполнена свежая проверка `latexmk -g main.tex` из `text_coursework/final_report_work/`; сборка завершилась с кодом `0`, PDF был создан.
+- Выполнена проверка через LaTeX-плагин: `compile_latex.py main.tex --compiler texlive --engine xelatex`; сборка завершилась с кодом `0`.
+- После проверки локальные build-артефакты удалены командой `latexmk -C main.tex`; оставшийся `main.bbl` удален как сгенерированный BibTeX-артефакт.
+- Нефатальные предупреждения остаются ожидаемыми для каркаса: `Empty thebibliography` до добавления явных `\cite{...}` и `Underfull \hbox` на титульном листе.
+
+## PDF tracking update 2026-05-30
+
+- По запросу пользователя `text_coursework/final_report_work/main.pdf` оставлен как отслеживаемый артефакт отчета.
+- Из `.gitignore` удалено правило `text_coursework/final_report_work/*.pdf`.
+- Остальные побочные файлы сборки LaTeX остаются игнорируемыми.
