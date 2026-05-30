@@ -172,3 +172,10 @@
 - Выполнена сборка командой `python3 scripts/compile_latex.py ... --compiler texlive --engine xelatex`; сборка завершилась с кодом `0`, `main.pdf` обновлен.
 - BibTeX использовал 8 записей из `ref.bib`; warning-ов BibTeX и undefined citation warnings нет.
 - Нефатальные предупреждения после финальной сборки: `Underfull \hbox` на титульном листе и в библиографии; небольшие `Overfull \hbox (0.80939pt too wide)` и `Overfull \hbox (0.85616pt too wide)` в `sections/03_methods_literature.tex`; ранее известный `Overfull \hbox (29.42638pt too wide)` в `sections/04_experiment_protocol.tex`.
+
+## Typography cleanup 2026-05-30
+
+- Убрано моноширинное выделение `RadialBasisCinf(size=8)` в `sections/03_methods_literature.tex`; выражение теперь набирается обычным текстом.
+- В активных файлах статьи `main.tex` и `sections/*.tex` заменены LaTeX-тройки дефисов на типографское тире в исходнике.
+- Проверка `rg` подтвердила: в активных файлах статьи больше нет LaTeX-троек дефисов, а в файлах `sections/*.tex` нет `\texttt{...}` и `\textbf{...}`.
+- Выполнена сборка командой `python3 scripts/compile_latex.py ... --compiler texlive --engine xelatex`; сборка завершилась с кодом `0`, `main.pdf` обновлен.
