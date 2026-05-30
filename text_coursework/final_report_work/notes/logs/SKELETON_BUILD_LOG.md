@@ -161,3 +161,14 @@
 - Содержательный смысл формулы не менялся: силы по-прежнему записаны как минус градиент энергии по координатам.
 - Выполнена сборка из `text_coursework/final_report_work/` командой `latexmk -g main.tex`; сборка завершилась с кодом `0`, `main.pdf` обновлен.
 - Новых предупреждений LaTeX, связанных с этой правкой, не появилось. Сохранились ранее известные предупреждения: `Underfull \hbox` на титульном листе, `Overfull \hbox (29.42638pt too wide)` в `sections/04_experiment_protocol.tex`, `Underfull \hbox` в библиографии.
+
+## Literature and models section replacement 2026-05-30
+
+- Изменены файлы: `sections/03_methods_literature.tex`, `ref.bib`, `notes/logs/SKELETON_BUILD_LOG.md`, `main.pdf`.
+- Раздел 3 заменен на расширенную версию `Обзор литературы и используемые модели` с формулами для локального разложения энергии, MTP, M3GNet, MatterSim, MACE и общей записи сравниваемых стратегий.
+- Источник `podryabinkin2023mlip3` сохранен в `ref.bib` и используется в `sections/03_methods_literature.tex` как контекст по линии MLIP-пакетов и активному обучению MTP, а не как описание конкретной версии MLIP-4.
+- В MTP-подразделе сохранено разграничение: `shapeev2016mtp` используется для математической основы MTP, `mlip4software` для использованного MLIP-4, `podryabinkin2023mlip3` для контекста MLIP-3.
+- Для `RadialBasisCinf(size=8)` добавлен только версточный разрыв через `\allowbreak`, чтобы убрать сильный `Overfull \hbox`; смысл текста не менялся.
+- Выполнена сборка командой `python3 scripts/compile_latex.py ... --compiler texlive --engine xelatex`; сборка завершилась с кодом `0`, `main.pdf` обновлен.
+- BibTeX использовал 8 записей из `ref.bib`; warning-ов BibTeX и undefined citation warnings нет.
+- Нефатальные предупреждения после финальной сборки: `Underfull \hbox` на титульном листе и в библиографии; небольшие `Overfull \hbox (0.80939pt too wide)` и `Overfull \hbox (0.85616pt too wide)` в `sections/03_methods_literature.tex`; ранее известный `Overfull \hbox (29.42638pt too wide)` в `sections/04_experiment_protocol.tex`.
