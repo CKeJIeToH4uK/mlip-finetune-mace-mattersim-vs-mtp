@@ -232,3 +232,13 @@
 - Вместо обобщенного `test-разбиениям` перечислены конкретные контрольные разбиения organic-датасета: `test_300K`, `test_600K`, `test_1200K`.
 - Выполнена сборка командой `python3 scripts/compile_latex.py ... --compiler texlive --engine xelatex`; сборка завершилась с кодом `0`, `main.pdf` обновлен.
 - После сборки `Overfull \hbox`, undefined citations и duplicate labels нет. Сохраняются только ранее известные `Underfull \hbox` на титульном листе и в библиографии, а также предупреждения LaTeX о переносе таблиц с `[h]` на `[ht]`.
+
+## Results section and figures 2026-05-30
+
+- `sections/05_results_discussion.tex` заменен с заглушки на раздел `Результаты и обсуждение`: добавлены подразделы по organic-датасету, H2O, MoNbTaVW и сводная интерпретация.
+- В основной текст включены 6 PDF-графиков из verified CSV: Energy/Forces MAE для organic, относительная Forces MAE к MTP-20, H2O MAE bars, MoNbTaVW Energy MAE и Forces MAE.
+- `sections/appendix.tex` перестроен под приложения A--F: полные таблицы основных метрик, RMSE-графики, дополнительные протоколы MoNbTaVW, MTP ensemble sanity check, цепочка происхождения результатов и технические детали построения графиков.
+- Сгенерированы 11 PDF-фигур в `text_coursework/final_report_work/figures/`: 6 main-фигур и 5 RMSE-фигур для приложения.
+- Числа в тексте сверены с `results/verified_metrics/organic_metrics_verified_20260511.csv`, `h2o_metrics_verified_20260511.csv`, `monbtavw_metrics_verified_20260511.csv` и `monbtavw_metrics_verified_20260511_annotated.csv`.
+- Выполнена сборка командой `python3 scripts/compile_latex.py ... --compiler texlive --engine xelatex`; сборка завершилась с кодом `0`, `main.pdf` обновлен.
+- После сборки `Overfull \hbox`, undefined references/citations и duplicate labels нет. Остались только нефатальные `Underfull \hbox` в таблицах/библиографии.

@@ -1,90 +1,179 @@
-\section{Полные таблицы метрик}
+\section{Полные таблицы основных метрик}
 
-В приложение выносятся полные CSV-таблицы, которые перегружают основной раздел результатов, но нужны для проверки численных строк:
+В этом приложении приведены полные основные таблицы метрик, использованные для раздела результатов. В таблицах оставлены модель, разбиение и четыре итоговые метрики; подробные пути к исходным файлам вынесены в приложение с цепочкой происхождения результатов.
 
-\begin{itemize}
-    \item organic\_metrics\_verified\_20260511.csv;
-    \item h2o\_metrics\_verified\_20260511.csv;
-    \item monbtavw\_metrics\_verified\_20260511.csv;
-    \item monbtavw\_metrics\_verified\_20260511\_annotated.csv;
-    \item alloy\_mtp16\_audit\_metrics\_20260511.md.
-\end{itemize}
-
-В основном тексте раздела результатов должны оставаться только компактные таблицы, графики и интерпретация. Полные таблицы используются как проверочный слой для строк, систем, разбиений и единиц измерения.
-
-\section{Дополнительные протоколы и абляционные проверки}
-
-Отдельно от основной линии сравнения фиксируются дополнительные протоколы и проверки, которые не должны смешиваться с главными строками MTP-16, MTP-20, MatterSim, MACE default и MACE-EW50:
-
-\begin{itemize}
-    \item MACE-EW10;
-    \item LoRA-EW10;
-    \item freeze1-EW10;
-    \item stage2/SWA;
-    \item проверка ансамбля MTP для organic 300K.
-\end{itemize}
-
-Эти строки полезны для анализа устойчивости протоколов и отдельных инженерных решений, но не являются основной сеткой сравнения в разделе результатов.
-
-\section{Преобразование форматов}
-
-Скрипты преобразования форматов указываются по назначению, без вставки полного кода.
-
-\begin{table}[h]
+\begin{table}[ht]
 \centering
-\small
-\caption{Скрипты преобразования форматов данных}
-\label{tab:appendix_format_conversion_scripts}
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\scriptsize
+\caption{Organic-датасет: полные метрики на контрольных температурах}
+\label{tab:appendix_organic_full_metrics}
+\begin{tabularx}{\textwidth}{@{}l l r r r r@{}}
 \toprule
-Скрипт & Входной формат & Выходной формат & Где использовался & Что сохраняет \\
+Модель & Разбиение & Energy MAE & Energy RMSE & Forces MAE & Forces RMSE \\
 \midrule
-xyz\_to\_mtp\_json.py & ASE/extxyz & JSON MLIP-4 & подготовка данных из XYZ/extxyz для MLIP-4 & типы атомов, координаты, ячейку, энергии, силы \\
-cfg\_to\_json.py & MLIP .cfg & JSON MLIP-4 & перенос конфигураций MLIP в JSON-представление & типы атомов, координаты, ячейку, энергии, силы и веса функции потерь \\
-mtp\_json\_to\_xyz.py & JSON MLIP-4 & ASE/extxyz & подготовка конфигураций сплава для инструментов на основе ASE & типы атомов, координаты, ячейку, энергии, силы \\
-cfg\_to\_xyz.py & MLIP .cfg & ASE/extxyz & подготовка MLIP-конфигураций для инструментов на основе ASE & типы атомов, координаты, ячейку, энергии, силы \\
+MatterSim & test\_300K & 0.669 & 0.843 & 32.543 & 45.490 \\
+MatterSim & test\_600K & 1.144 & 1.452 & 57.434 & 83.203 \\
+MatterSim & test\_1200K & 3.465 & 4.609 & 137.440 & 217.705 \\
+MACE & test\_300K & 0.570 & 0.679 & 18.569 & 25.893 \\
+MACE & test\_600K & 0.953 & 1.209 & 33.851 & 49.835 \\
+MACE & test\_1200K & 1.826 & 2.365 & 74.919 & 121.754 \\
+MTP-16 & test\_300K & 1.966 & 2.579 & 172.176 & 251.039 \\
+MTP-16 & test\_600K & 4.677 & 6.496 & 256.605 & 375.816 \\
+MTP-16 & test\_1200K & 14.778 & 20.442 & 441.937 & 748.243 \\
+MTP-20 & test\_300K & 1.632 & 2.099 & 140.196 & 205.932 \\
+MTP-20 & test\_600K & 3.726 & 5.031 & 218.809 & 331.140 \\
+MTP-20 & test\_1200K & 10.244 & 13.463 & 402.400 & 661.380 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\scriptsize
+\caption{H2O: полные метрики на validation-разбиении}
+\label{tab:appendix_h2o_full_metrics}
+\begin{tabularx}{\textwidth}{@{}l l r r r r@{}}
+\toprule
+Модель & Разбиение & Energy MAE & Energy RMSE & Forces MAE & Forces RMSE \\
+\midrule
+MatterSim & valid & 0.624 & 1.009 & 30.122 & 49.922 \\
+MACE & valid & 3.070 & 3.419 & 26.653 & 55.606 \\
+MTP-16 & valid & 3.901 & 5.859 & 333.057 & 480.393 \\
+MTP-20 & valid & 1.542 & 2.561 & 108.261 & 191.794 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\scriptsize
+\caption{MoNbTaVW: полные метрики на validation-разбиении}
+\label{tab:appendix_monbtavw_full_metrics}
+\begin{tabularx}{\textwidth}{@{}l l r r r r@{}}
+\toprule
+Модель или протокол & Разбиение & Energy MAE & Energy RMSE & Forces MAE & Forces RMSE \\
+\midrule
+MatterSim & valid & 6.846 & 28.924 & 54.749 & 116.898 \\
+MACE default & valid & 27.523 & 86.401 & 62.076 & 113.747 \\
+MACE-EW50 & valid & 11.868 & 32.623 & 62.867 & 113.900 \\
+MTP-16 & valid & 16.693 & 42.954 & 148.727 & 248.981 \\
+MTP-20 & valid & 12.938 & 39.637 & 94.460 & 146.763 \\
+MACE-EW10 & valid & 12.437 & 39.342 & 62.213 & 113.788 \\
+LoRA-EW10 & valid & 17.339 & 33.508 & 81.404 & 129.083 \\
+freeze1-EW10 & valid & 11.985 & 38.468 & 62.321 & 114.110 \\
+stage2/SWA & valid & 38.751 & 86.227 & 63.911 & 114.005 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{RMSE-графики}
+
+В основном тексте используются MAE-графики, потому что они дают более прямую интерпретацию средней ошибки. RMSE-графики приведены отдельно: они нужны для проверки чувствительности выводов к крупным отклонениям.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.86\textwidth]{appendix_organic_energy_rmse}
+    \caption{Energy RMSE на organic-датасете при переносе между температурными режимами.}
+    \label{fig:appendix_organic_energy_rmse}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.86\textwidth]{appendix_organic_forces_rmse}
+    \caption{Forces RMSE на organic-датасете при переносе между температурными режимами.}
+    \label{fig:appendix_organic_forces_rmse}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.92\textwidth]{appendix_h2o_rmse_bars}
+    \caption{Energy RMSE и Forces RMSE на validation-разбиении H2O.}
+    \label{fig:appendix_h2o_rmse}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.86\textwidth]{appendix_monbtavw_energy_rmse}
+    \caption{Energy RMSE на validation-разбиении MoNbTaVW.}
+    \label{fig:appendix_monbtavw_energy_rmse}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.86\textwidth]{appendix_monbtavw_forces_rmse}
+    \caption{Forces RMSE на validation-разбиении MoNbTaVW.}
+    \label{fig:appendix_monbtavw_forces_rmse}
+\end{figure}
+
+\section{Дополнительные протоколы MoNbTaVW}
+
+Дополнительные строки MoNbTaVW не входят в основную линию сравнения. Они используются как ablation-эксперименты для проверки отдельных протоколов тонкой настройки MACE.
+
+\begin{table}[ht]
+\centering
+\scriptsize
+\caption{Дополнительные протоколы MoNbTaVW}
+\label{tab:appendix_monbtavw_ablation_protocols}
+\begin{tabularx}{\textwidth}{@{}l r r r r X@{}}
+\toprule
+Протокол & Energy MAE & Energy RMSE & Forces MAE & Forces RMSE & Комментарий \\
+\midrule
+MACE-EW10 & 12.437 & 39.342 & 62.213 & 113.788 & energy\_weight=10, forces\_weight=100; дополнительная energy-weighted строка \\
+LoRA-EW10 & 17.339 & 33.508 & 81.404 & 129.083 & LoRA-ablation с energy\_weight=10 и forces\_weight=100 \\
+freeze1-EW10 & 11.985 & 38.468 & 62.321 & 114.110 & частичная заморозка первого блока; ablation-строка \\
+stage2/SWA & 38.751 & 86.227 & 63.911 & 114.005 & stage-two/SWA протокол; используется как вспомогательная проверка \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{MTP ensemble sanity check}
+
+MTP ensemble используется только как sanity check для organic 300K и не входит в основную линию результатов. Таблица ниже показывает агрегаты по пяти принятым повторным MTP-запускам; они не смешиваются с контрольными строками test\_300K, test\_600K и test\_1200K из раздела результатов.
+
+\begin{table}[ht]
+\centering
+\scriptsize
+\caption{MTP ensemble sanity check для organic 300K}
+\label{tab:appendix_mtp_ensemble_sanity}
+\begin{tabularx}{\textwidth}{@{}l l r r r@{}}
+\toprule
+Модель & Разбиение & Число запусков & Energy MAE mean ± std & Forces MAE mean ± std \\
+\midrule
+MTP-16 & train\_300K & 5 & 1.714 ± 0.289 & 174.525 ± 36.361 \\
+MTP-16 & valid\_300K & 5 & 2.160 ± 0.357 & 178.738 ± 37.297 \\
+MTP-20 & train\_300K & 5 & 1.392 ± 0.187 & 147.308 ± 21.244 \\
+MTP-20 & valid\_300K & 5 & 1.873 ± 0.283 & 152.028 ± 21.999 \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 \section{Цепочка происхождения результатов}
 
-Для строк, включаемых в основной текст или в приложения, должна быть сохранена проверяемая связь между системой, моделью, разбиением, проверенной таблицей и исходным результатом оценки.
+Цепочка происхождения фиксирует, откуда взяты строки, использованные в основном тексте. Проверенные CSV остаются источником численных утверждений; графики являются только визуализацией этих строк.
 
-\begin{table}[h]
+\begin{table}[ht]
 \centering
 \scriptsize
-\caption{Схема проверки происхождения численных результатов}
-\label{tab:appendix_result_source_chain}
+\caption{Цепочка происхождения строк основной линии}
+\label{tab:appendix_source_chain}
 \setlength{\tabcolsep}{2pt}
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.12\textwidth}>{\raggedright\arraybackslash}p{0.14\textwidth}>{\raggedright\arraybackslash}p{0.10\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}X@{}}
+\begin{tabularx}{\textwidth}{@{}l l l X X X@{}}
 \toprule
-Система & Модель & Разбиение & Проверенная таблица & Исходная оценка & Статус или комментарий \\
+Система & Модель или протокол & Разбиение & Проверенная таблица & Исходная оценка & Статус или комментарий \\
 \midrule
-H2O & MTP-20 clean & valid & H2O verified CSV & сохраненная оценка & основная строка после сверки \\
-MoNbTaVW & MTP-16 & valid & MoNbTaVW annotated CSV & MTP-16 audit & есть оговорка по журнальному уровню, метрики сверены как level16 \\
-MoNbTaVW & MACE default / MACE-EW50 & valid & MoNbTaVW annotated CSV & оценки MACE & разные протоколы, не объединяются в одну строку \\
-Разные системы & без дообучения & контрольное & при наличии проверенной строки & исходная оценка & включать как диагностические строки, а не как замену основной тонкой настройки \\
+organic & MatterSim, MACE, MTP-16, MTP-20 & test\_300K, test\_600K, test\_1200K & organic verified CSV & cross-temp JSON & основные строки температурного переноса \\
+H2O & MatterSim, MACE, MTP-16, MTP-20 & valid & H2O verified CSV & eval\_valid и MTP metrics & основные строки validation-сравнения \\
+MoNbTaVW & MatterSim & valid & MoNbTaVW verified CSV & final metrics handoff & final\_main \\
+MoNbTaVW & MACE default & valid & MoNbTaVW annotated CSV & final metrics; MACE backup & final\_main; default-loss протокол \\
+MoNbTaVW & MACE-EW50 & valid & MoNbTaVW annotated CSV & completed eval JSON & final\_main; energy\_weight=50 \\
+MoNbTaVW & MTP-16 & valid & MoNbTaVW annotated CSV & MTP-16 audit CSV & final\_main; есть оговорка по журнальному уровню, метрики сверены как level16 \\
+MoNbTaVW & MTP-20 & valid & MoNbTaVW annotated CSV & metrics\_20 / handoff & final\_main; level20 comparison \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-\section{Границы воспроизводимости}
+\section{Технические детали построения графиков}
 
-Очищенный репозиторий предназначен для проверки итоговых таблиц, протокола, скриптов агрегации и цепочки происхождения результатов. Он не является полным пакетом для повторного переобучения всех моделей.
+Все main-графики построены из проверенных CSV по organic-датасету, H2O и MoNbTaVW. Графики не являются самостоятельным источником численных утверждений: численные выводы в тексте сверяются с проверенными CSV и цепочкой происхождения результатов.
 
-\begin{table}[h]
-\centering
-\small
-\caption{Что включено и исключено из очищенного репозитория}
-\label{tab:appendix_reproducibility_boundaries}
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
-\toprule
-Включено & Исключено физически \\
-\midrule
-Проверенные CSV-таблицы, небольшие результаты оценки, манифесты, скрипты агрегации, исторические скрипты преобразования форматов, материалы для сверки происхождения результатов & исходные датасеты, контрольные точки и веса моделей, тяжелые архивы, крупные промежуточные артефакты, результаты сборки, архивные контексты \\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-Такое ограничение не мешает проверке отчета: численные строки, происхождение результатов и правила включения материалов фиксируются явно. Однако оно означает, что полный повтор вычислительных экспериментов требует внешних данных и артефактов, перечисленных в манифестах.
+Единицы измерения фиксируются одинаково во всех таблицах и графиках: Energy MAE и Energy RMSE приводятся в meV/atom, Forces MAE и Forces RMSE — в meV/Å. В main-графики MoNbTaVW включены только MatterSim, MACE default, MACE-EW50, MTP-16 и MTP-20; дополнительные строки MACE-EW10, LoRA-EW10, freeze1-EW10 и stage2/SWA оставлены в приложении как вспомогательные протоколы.
