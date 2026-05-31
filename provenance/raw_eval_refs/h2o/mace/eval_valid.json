@@ -1,0 +1,14 @@
+{
+  "model_type": "mace",
+  "model_path": "/home/brmannanov/coursework/new_datasets/water/mace/water_ft.model",
+  "dataset_path": "/home/brmannanov/coursework/new_datasets/water/convert/valid_H2O.xyz",
+  "dataset_name": "water_valid",
+  "n_cfg": 319,
+  "rmse_E_per_atom_eV": 0.003419244667645083,
+  "mae_E_per_atom_eV": 0.0030704481283859576,
+  "rmse_F_eV_A": 0.05560621426159186,
+  "mae_F_eV_A": 0.026653248626456825,
+  "rmse_F_meV_A": 55.60621426159186,
+  "mae_F_meV_A": 26.653248626456826,
+  "time_sec_total": 24.546878835186362
+}

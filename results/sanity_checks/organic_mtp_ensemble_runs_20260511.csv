@@ -1,0 +1,7 @@
+level,run_id,test_temperature,energy_mae_meV_atom,energy_rmse_meV_atom,forces_mae_meV_A,forces_rmse_meV_A,source_file,notes
+MTP-16,run-1,300K,1.965594,2.578954,172.175900,251.039200,repo/coursework/cross_temp_eval/results/mtp/test_300K_mtp16.json,"cross-temperature test row; model_path points to level16_run1/mtp16_trained.json; no run2-run5 test rows found"
+MTP-16,run-1,600K,4.677083,6.495860,256.605100,375.815700,repo/coursework/cross_temp_eval/results/mtp/test_600K_mtp16.json,"cross-temperature test row; model_path points to level16_run1/mtp16_trained.json; no run2-run5 test rows found"
+MTP-16,run-1,1200K,14.777900,20.442030,441.936600,748.242900,repo/coursework/cross_temp_eval/results/mtp/test_1200K_mtp16.json,"cross-temperature test row; model_path points to level16_run1/mtp16_trained.json; no run2-run5 test rows found"
+MTP-20,run-1,300K,1.632113,2.099471,140.196000,205.931700,repo/coursework/cross_temp_eval/results/mtp/test_300K_mtp20.json,"cross-temperature test row; model_path points to level20_run1/mtp20_trained.json; no run2-run5 test rows found"
+MTP-20,run-1,600K,3.725958,5.030732,218.808800,331.139900,repo/coursework/cross_temp_eval/results/mtp/test_600K_mtp20.json,"cross-temperature test row; model_path points to level20_run1/mtp20_trained.json; no run2-run5 test rows found"
+MTP-20,run-1,1200K,10.244110,13.463010,402.400300,661.379600,repo/coursework/cross_temp_eval/results/mtp/test_1200K_mtp20.json,"cross-temperature test row; model_path points to level20_run1/mtp20_trained.json; no run2-run5 test rows found"

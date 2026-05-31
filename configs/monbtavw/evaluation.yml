@@ -1,0 +1,6 @@
+system: MoNbTaVW
+split: valid
+metric_source: results/verified_metrics/monbtavw_metrics_verified_20260511.csv
+raw_eval_refs: provenance/raw_eval_refs/monbtavw
+status: final_main
+notes: baseline and energy-weighted MACE configurations stay separate

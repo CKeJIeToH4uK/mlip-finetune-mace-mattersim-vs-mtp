@@ -1,0 +1,101 @@
+# Log Snippet: repo/coursework/new_datasets/alloy/mace_ablation_20260509/lora_ew10_normal/train.log
+
+Original size: 21731 bytes. Full raw log not copied.
+
+1: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+2:   _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+6: 2026-05-10 05:14:55.430 INFO: CUDA version: 12.4, CUDA device: 0
+7: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/mace/cli/run_train.py:169: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+8:   model_foundation = torch.load(
+9: 2026-05-10 05:14:56.701 INFO: Using foundation model /home/brmannanov/coursework/mace_models/2023-12-10-mace-128-L0_energy_epoch-249.model as initial checkpoint.
+10: 2026-05-10 05:14:56.703 INFO: ===========LOADING INPUT DATA===========
+12: 2026-05-10 05:14:56.703 INFO: Using the key specifications to parse data:
+13: 2026-05-10 05:14:56.704 INFO: Default: KeySpecification(info_keys={'energy': 'energy', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'total_charge', 'polarizability': 'polarizability', 'total_spin': 'total_spin'}, arra
+14: 2026-05-10 05:14:56.704 INFO: =============    Processing head Default     ===========
+15: 2026-05-10 05:14:57.234 WARNING: Since ASE version 3.23.0b1, using energy_key 'energy' is no longer safe when communicating between MACE and ASE. We recommend using a different key, rewriting 'energy' to 'REF_energy'. You need to use --energy_key='REF_energy' to specify the chosen key name.
+16: 2026-05-10 05:14:57.414 WARNING: Since ASE version 3.23.0b1, using forces_key 'forces' is no longer safe when communicating between MACE and ASE. We recommend using a different key, rewriting 'forces' to 'REF_forces'. You need to use --forces_key='REF_forces' to specify the chosen key name.
+17: 2026-05-10 05:14:57.647 INFO: Training set 1/1 [energy: 1210, stress: 0, virials: 0, dipole components: 0, head: 1210, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 1210, charges: 0]
+18: 2026-05-10 05:14:57.653 INFO: Total Training set [energy: 1210, stress: 0, virials: 0, dipole components: 0, head: 1210, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 1210, charges: 0]
+19: 2026-05-10 05:14:57.762 WARNING: Since ASE version 3.23.0b1, using energy_key 'energy' is no longer safe when communicating between MACE and ASE. We recommend using a different key, rewriting 'energy' to 'REF_energy'. You need to use --energy_key='REF_energy' to specify the chosen key name.
+20: 2026-05-10 05:14:57.793 WARNING: Since ASE version 3.23.0b1, using forces_key 'forces' is no longer safe when communicating between MACE and ASE. We recommend using a different key, rewriting 'forces' to 'REF_forces'. You need to use --forces_key='REF_forces' to specify the chosen key name.
+21: 2026-05-10 05:14:57.833 INFO: Validation set 1/1 [energy: 213, stress: 0, virials: 0, dipole components: 0, head: 213, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 213, charges: 0]
+22: 2026-05-10 05:14:57.835 INFO: Total Validation set [energy: 213, stress: 0, virials: 0, dipole components: 0, head: 213, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 213, charges: 0]
+23: 2026-05-10 05:14:57.835 INFO: Total number of configurations: train=1210, valid=213, tests=[],
+24: 2026-05-10 05:14:57.836 INFO: Using atomic numbers from command line argument
+30: 2026-05-10 05:15:02.137 INFO: Combining 1 list datasets for head 'Default'
+31: 2026-05-10 05:15:02.809 INFO: Combining 1 list datasets for head 'Default_valid'
+32: 2026-05-10 05:15:02.809 INFO: Combined validation datasets for Default
+33: 2026-05-10 05:15:02.809 INFO: Head 'Default' training dataset size: 1210
+35: 2026-05-10 05:15:03.671 INFO: Average number of neighbors: 56.52305706170927
+36: 2026-05-10 05:15:03.672 INFO: During training the following quantities will be reported: energy, forces
+37: 2026-05-10 05:15:03.672 INFO: ===========MODEL DETAILS===========
+40: 2026-05-10 05:15:04.551 INFO: Model configuration extracted from foundation model
+41: 2026-05-10 05:15:04.551 INFO: Using weighted loss function for fine-tuning
+42: 2026-05-10 05:15:04.551 INFO: Message passing with hidden irreps 128x0e)
+45: 2026-05-10 05:15:04.552 INFO: Distance transform for radial basis functions: None
+46: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+47:   warnings.warn(
+48: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+49:   warnings.warn(
+50: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+51:   warnings.warn(
+52: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+53:   warnings.warn(
+54: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+55:   warnings.warn(
+56: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+57:   warnings.warn(
+58: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+59:   warnings.warn(
+60: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+61:   warnings.warn(
+62: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+63:   warnings.warn(
+64: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+65:   warnings.warn(
+66: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+67:   warnings.warn(
+68: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+69:   warnings.warn(
+70: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+71:   warnings.warn(
+72: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+73:   warnings.warn(
+74: 2026-05-10 05:15:06.924 INFO: Injecting LoRA layers with rank=4 and alpha=1.0
+75: 2026-05-10 05:15:06.926 INFO: Original model has 482330 trainable parameters.
+76: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+77:   warnings.warn(
+78: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+79:   warnings.warn(
+80: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+81:   warnings.warn(
+82: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+83:   warnings.warn(
+84: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+85:   warnings.warn(
+86: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+87:   warnings.warn(
+88: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+89:   warnings.warn(
+90: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+91:   warnings.warn(
+92: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+93:   warnings.warn(
+94: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+95:   warnings.warn(
+96: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+97:   warnings.warn(
+98: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+99:   warnings.warn(
+100: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+101:   warnings.warn(
+102: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+103:   warnings.warn(
+104: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+105:   warnings.warn(
+106: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+107:   warnings.warn(
+108: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+109:   warnings.warn(
+110: /home/brmannanov/.conda/envs/mace/lib/python3.11/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch
+111:   warnings.warn(

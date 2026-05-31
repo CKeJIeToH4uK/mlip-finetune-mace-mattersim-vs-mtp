@@ -1,0 +1,10 @@
+model_or_protocol,split,energy_mae_meV_atom,energy_rmse_meV_atom,forces_mae_meV_A,forces_rmse_meV_A,notes
+MatterSim,valid,6.846,28.924,54.749,116.898,"Fine-tuned reference; single run; source: monbtavw_metrics_verified_20260511.csv."
+MACE default,valid,27.52323390372057,86.40110798935581,62.0756620394977,113.74663038919498,"Local default row means lr=0.001 fair200 default-loss baseline; not EW50; source: monbtavw_metrics_verified_20260511.csv."
+MACE-EW10,valid,12.436830466139606,39.34197947634347,62.212968681644284,113.78785800366062,"Energy-weighted protocol; energy_weight=10 forces_weight=100 normal; source: monbtavw_metrics_verified_20260511.csv."
+MACE-EW50,valid,11.867850551503924,32.623201692084685,62.86696164088902,113.89976584924635,"Energy-weighted protocol used as main MACE alloy row; energy_weight=50 forces_weight=100 normal; source: monbtavw_metrics_verified_20260511.csv."
+LoRA-EW10,valid,17.33860199971883,33.50827126820813,81.40444783594357,129.08256777868087,"LoRA ablation with energy_weight=10 forces_weight=100; source: monbtavw_metrics_verified_20260511.csv."
+freeze1-EW10,valid,11.985298798253305,38.46768284831533,62.32084278218067,114.1101138659656,"Partial freeze=1 ablation with energy_weight=10 forces_weight=100; source: monbtavw_metrics_verified_20260511.csv."
+stage2/SWA,valid,38.75138852755757,86.22703617370233,63.91064272041855,114.00456575724179,"Stage-two/SWA energy convergence protocol; source: monbtavw_metrics_verified_20260511.csv."
+MTP-16,valid,16.69336,42.95377,148.72740,248.98070,"Level verified as 16 by audit; source: monbtavw_metrics_verified_20260511.csv and alloy_mtp16_audit_metrics_20260511.csv."
+MTP-20,valid,12.938,39.637,94.46,146.763,"Level 20 from-scratch reference; single run; source: monbtavw_metrics_verified_20260511.csv."

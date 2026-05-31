@@ -1,0 +1,14 @@
+{
+  "model_type": "mattersim",
+  "model_path": "/home/brmannanov/coursework/new_datasets/water/mattersim/finetune_result/best_model.pth",
+  "dataset_path": "/home/brmannanov/coursework/new_datasets/water/convert/valid_H2O.xyz",
+  "dataset_name": "water_valid",
+  "n_cfg": 319,
+  "rmse_E_per_atom_eV": 0.0010094027183071368,
+  "mae_E_per_atom_eV": 0.0006242061269722803,
+  "rmse_F_eV_A": 0.049921829322737775,
+  "mae_F_eV_A": 0.030122464829856546,
+  "rmse_F_meV_A": 49.92182932273777,
+  "mae_F_meV_A": 30.122464829856547,
+  "time_sec_total": 30.117878081277013
+}

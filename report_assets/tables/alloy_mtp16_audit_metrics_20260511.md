@@ -1,0 +1,4 @@
+| dataset | model_label | actual_level | split | energy_mae_meV_atom | energy_rmse_meV_atom | forces_mae_meV_A | forces_rmse_meV_A | source_file | notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| alloy_MoNbTaVW | MTP-16 | 16 | train | 13.86010 | 42.06676 | 143.23950 | 215.54610 | repo/coursework/new_datasets/alloy/mtp/metrics.json | Source MTP errors report Energy/Atom and Forces in eV/atom and eV/A; converted to meV units. Level verified by metrics.json level=16 plus model basis_len=122 and n_params=897; log has a conflicting hardcoded-looking 'MTP level 20' print. |
+| alloy_MoNbTaVW | MTP-16 | 16 | valid | 16.69336 | 42.95377 | 148.72740 | 248.98070 | repo/coursework/new_datasets/alloy/mtp/metrics.json | Source MTP errors report Energy/Atom and Forces in eV/atom and eV/A; converted to meV units. Level verified by metrics.json level=16 plus model basis_len=122 and n_params=897; log has a conflicting hardcoded-looking 'MTP level 20' print. |

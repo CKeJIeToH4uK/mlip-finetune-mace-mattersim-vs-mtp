@@ -1,0 +1,14 @@
+{
+  "model_type": "mace",
+  "model_path": "/home/brmannanov/coursework/new_datasets/alloy/mace/alloy_ft.model",
+  "dataset_path": "/home/brmannanov/coursework/new_datasets/alloy/convert/valid_alloy.xyz",
+  "dataset_name": "alloy_valid",
+  "n_cfg": 213,
+  "rmse_E_per_atom_eV": 0.06444756324674887,
+  "mae_E_per_atom_eV": 0.03474367123250732,
+  "rmse_F_eV_A": 0.12324710566119987,
+  "mae_F_eV_A": 0.07060284896367629,
+  "rmse_F_meV_A": 123.24710566119987,
+  "mae_F_meV_A": 70.6028489636763,
+  "time_sec_total": 11.573021460324526
+}

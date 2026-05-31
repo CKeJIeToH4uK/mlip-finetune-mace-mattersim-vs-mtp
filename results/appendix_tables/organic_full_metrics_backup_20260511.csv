@@ -1,0 +1,13 @@
+model,test_split_or_temp,energy_mae_meV_atom,energy_rmse_meV_atom,forces_mae_meV_A,forces_rmse_meV_A,notes
+MatterSim,300K,0.668864347,0.842537021,32.542574670,45.489514842,"Single evaluated artifact; source: organic_metrics_verified_20260511.csv; split=test_300K."
+MatterSim,600K,1.144231636,1.451672159,57.434315622,83.203365310,"Single evaluated artifact; source: organic_metrics_verified_20260511.csv; split=test_600K."
+MatterSim,1200K,3.464716791,4.609007331,137.440116076,217.704820110,"Single evaluated artifact; source: organic_metrics_verified_20260511.csv; split=test_1200K."
+MACE,300K,0.569818976,0.678810855,18.569222160,25.892802761,"Single evaluated artifact; source: organic_metrics_verified_20260511.csv; split=test_300K."
+MACE,600K,0.953002409,1.208691746,33.851347442,49.835051013,"Single evaluated artifact; source: organic_metrics_verified_20260511.csv; split=test_600K."
+MACE,1200K,1.825729923,2.364865893,74.919010816,121.753520736,"Single evaluated artifact; source: organic_metrics_verified_20260511.csv; split=test_1200K."
+MTP-16,300K,1.965594000,2.578954000,172.175900000,251.039200000,"Single evaluated artifact for cross-temperature test; source: organic_metrics_verified_20260511.csv; no std for test_300K."
+MTP-16,600K,4.677083000,6.495860000,256.605100000,375.815700000,"Single evaluated artifact for cross-temperature test; source: organic_metrics_verified_20260511.csv; no std for test_600K."
+MTP-16,1200K,14.777900000,20.442030000,441.936600000,748.242900000,"Single evaluated artifact for cross-temperature test; source: organic_metrics_verified_20260511.csv; no std for test_1200K."
+MTP-20,300K,1.632113000,2.099471000,140.196000000,205.931700000,"Single evaluated artifact for cross-temperature test; source: organic_metrics_verified_20260511.csv; no std for test_300K."
+MTP-20,600K,3.725958000,5.030732000,218.808800000,331.139900000,"Single evaluated artifact for cross-temperature test; source: organic_metrics_verified_20260511.csv; no std for test_600K."
+MTP-20,1200K,10.244110000,13.463010000,402.400300000,661.379600000,"Single evaluated artifact for cross-temperature test; source: organic_metrics_verified_20260511.csv; no std for test_1200K."

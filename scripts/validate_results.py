@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import re
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+REQUIRED = [
+    'results/verified_metrics/organic_metrics_verified_20260511.csv',
+    'results/verified_metrics/h2o_metrics_verified_20260511.csv',
+    'results/verified_metrics/monbtavw_metrics_verified_20260511.csv',
+    'results/verified_metrics/monbtavw_metrics_verified_20260511_annotated.csv',
+    'results/sanity_checks/ensemble_aggregates_verified_20260511.csv',
+]
+
+
+def read_text(path):
+    return path.read_text(encoding='utf-8', errors='ignore')
+
+
+def main():
+    errors = []
+    for rel in REQUIRED:
+        if not (ROOT / rel).exists():
+            errors.append(f'missing required metric/support table: {rel}')
+
+    forbidden_verified = [
+        'results/verified_metrics/final_metrics_long.csv',
+        'results/verified_metrics/final_metrics_wide.csv',
+    ]
+    for rel in forbidden_verified:
+        if (ROOT / rel).exists():
+            errors.append(f'auxiliary final metrics table must not be under verified_metrics: {rel}')
+
+    for rel in ['results/verified_metrics/h2o_metrics_verified_20260511.csv', 'results/verified_metrics/monbtavw_metrics_verified_20260511.csv', 'results/verified_metrics/monbtavw_metrics_verified_20260511_annotated.csv']:
+        path = ROOT / rel
+        if path.exists():
+            text = read_text(path)
+            if re.search(r'(^|[,;\s])test([,;\s]|$)', text, re.IGNORECASE):
+                errors.append(f'validation table uses reserved split wording: {rel}')
+
+    annotated = ROOT / 'results/verified_metrics/monbtavw_metrics_verified_20260511_annotated.csv'
+    if annotated.exists():
+        text = read_text(annotated)
+        for status in ['final_main', 'appendix_candidate']:
+            if status not in text:
+                errors.append(f'annotated MoNbTaVW table missing status: {status}')
+
+    summary = ROOT / 'docs' / 'results_summary.md'
+    if summary.exists():
+        text = read_text(summary)
+        guarded = [
+            'универсальные модели всегда ' + 'лучше',
+            'cost-' + 'efficiency',
+            'run' + 'time',
+            '3' + 'BPA',
+            'MTP-' + '24',
+            'QM' + '7b',
+            'ET' + 'N',
+        ]
+        for term in guarded:
+            if term in text:
+                errors.append(f'guarded phrase appears in results summary: {term}')
+    if errors:
+        for e in errors:
+            print('ERROR:', e)
+        return 1
+    print('validate_results: OK')
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())

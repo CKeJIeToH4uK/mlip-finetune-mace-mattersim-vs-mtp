@@ -1,0 +1,6 @@
+system: H2O
+split: valid
+metric_source: results/verified_metrics/h2o_metrics_verified_20260511.csv
+raw_eval_refs: provenance/raw_eval_refs/h2o
+status: final_main
+notes: held-out validation rows are not renamed

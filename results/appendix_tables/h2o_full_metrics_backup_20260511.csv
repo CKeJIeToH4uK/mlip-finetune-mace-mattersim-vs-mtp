@@ -1,0 +1,5 @@
+model,split,energy_mae_meV_atom,energy_rmse_meV_atom,forces_mae_meV_A,forces_rmse_meV_A,notes
+MatterSim,validation,0.624206127,1.009402718,30.122464830,49.921829323,"Single-run validation metric; source: h2o_metrics_verified_20260511.csv."
+MACE,validation,3.070448128,3.419244668,26.653248626,55.606214262,"Single-run validation metric; source: h2o_metrics_verified_20260511.csv."
+MTP-16,validation,3.901132000,5.859228000,333.057300000,480.392500000,"Final verified old H2O MTP row; actual level=16; source: h2o_metrics_verified_20260511.csv."
+MTP-20,validation,1.542203000,2.560598000,108.261100000,191.793600000,"Clean level 20 row, n_params=450; source: h2o_metrics_verified_20260511.csv."

@@ -1,0 +1,14 @@
+{
+  "model_type": "mace",
+  "model_path": "/home/brmannanov/coursework/mace_finetune/ft_300K/ft_300K.model",
+  "dataset_path": "/home/brmannanov/coursework/databases/current_600K/test_600K.xyz",
+  "dataset_name": "test_600K",
+  "n_cfg": 2138,
+  "rmse_E_per_atom_eV": 0.001208691745877666,
+  "mae_E_per_atom_eV": 0.0009530024092199462,
+  "rmse_F_eV_A": 0.049835051012961804,
+  "mae_F_eV_A": 0.03385134744206142,
+  "rmse_F_meV_A": 49.835051012961806,
+  "mae_F_meV_A": 33.85134744206142,
+  "time_sec_total": 73.91387744806707
+}

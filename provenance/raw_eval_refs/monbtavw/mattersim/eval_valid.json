@@ -1,0 +1,14 @@
+{
+  "model_type": "mattersim",
+  "model_path": "/home/brmannanov/coursework/new_datasets/alloy/mattersim/finetune_result/best_model.pth",
+  "dataset_path": "/home/brmannanov/coursework/new_datasets/alloy/convert/valid_alloy.xyz",
+  "dataset_name": "alloy_valid",
+  "n_cfg": 213,
+  "rmse_E_per_atom_eV": 0.028923917259337132,
+  "mae_E_per_atom_eV": 0.0068463236888502525,
+  "rmse_F_eV_A": 0.11689818859963884,
+  "mae_F_eV_A": 0.054748683675861505,
+  "rmse_F_meV_A": 116.89818859963884,
+  "mae_F_meV_A": 54.7486836758615,
+  "time_sec_total": 17.555574847385287
+}

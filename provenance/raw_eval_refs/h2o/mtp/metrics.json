@@ -1,0 +1,14 @@
+{
+  "dataset": "water_H2O",
+  "species_order": [
+    1,
+    8
+  ],
+  "level": 16,
+  "train_db": "/home/brmannanov/coursework/new_datasets/water/convert/train_H2O.json",
+  "valid_db": "/home/brmannanov/coursework/new_datasets/water/convert/valid_H2O.json",
+  "model_path": "/home/brmannanov/coursework/new_datasets/water/mtp/mtp20_trained.json",
+  "train_result": "((), [np.float64(2.7018192941997268), 0.0, <MTP object, n_params = 222, species = ['H', 'O']>])",
+  "train_errors": "Errors (MAE, RMSE, MAXAE)\nEnergy      = 7.958431e-01, 1.168616e+00, 1.220456e+01\nEnergy/Atom = 4.145016e-03, 6.086544e-03, 6.356543e-02\nForces      = 3.385001e-01, 4.851869e-01, 2.314397e+01\nStress      = 0.000000e+00, 0.000000e+00, 0.000000e+00\nCharges     = 0.000000e+00, 0.000000e+00, 0.000000e+00\n",
+  "valid_errors": "Errors (MAE, RMSE, MAXAE)\nEnergy      = 7.490174e-01, 1.124972e+00, 7.323599e+00\nEnergy/Atom = 3.901132e-03, 5.859228e-03, 3.814374e-02\nForces      = 3.330573e-01, 4.803925e-01, 1.436359e+01\nStress      = 0.000000e+00, 0.000000e+00, 0.000000e+00\nCharges     = 0.000000e+00, 0.000000e+00, 0.000000e+00\n"
+}

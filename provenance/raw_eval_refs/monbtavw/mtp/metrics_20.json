@@ -1,0 +1,17 @@
+{
+  "dataset": "alloy_MoNbTaVW",
+  "species_order": [
+    23,
+    41,
+    42,
+    73,
+    74
+  ],
+  "level": 20,
+  "train_db": "/home/brmannanov/coursework/new_datasets/alloy/convert/train_alloy.json",
+  "valid_db": "/home/brmannanov/coursework/new_datasets/alloy/convert/valid_alloy.json",
+  "model_path": "/home/brmannanov/coursework/new_datasets/alloy/mtp/mtp20_trained.json",
+  "train_result": "((), [np.float64(0.03679930353347861), 0.0, <MTP object, n_params = 1293, species = ['V', 'Nb', 'Mo', 'Ta', 'W']>])",
+  "train_errors": "Errors (MAE, RMSE, MAXAE)\nEnergy      = 2.397652e-01, 3.903444e-01, 2.630174e+00\nEnergy/Atom = 8.256366e-03, 2.331567e-02, 1.895828e-01\nForces      = 9.224724e-02, 1.332541e-01, 3.378428e+00\nStress      = 3.552686e+01, 7.181805e+01, 5.178879e+02\nCharges     = 0.000000e+00, 0.000000e+00, 0.000000e+00\n",
+  "valid_errors": "Errors (MAE, RMSE, MAXAE)\nEnergy      = 3.091963e-01, 7.598050e-01, 9.247916e+00\nEnergy/Atom = 1.293780e-02, 3.963677e-02, 3.511875e-01\nForces      = 9.445979e-02, 1.467634e-01, 3.969349e+00\nStress      = 2.991988e+01, 6.131118e+01, 2.733500e+02\nCharges     = 0.000000e+00, 0.000000e+00, 0.000000e+00\n"
+}
